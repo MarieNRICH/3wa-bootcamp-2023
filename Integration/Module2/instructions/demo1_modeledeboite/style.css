@@ -1,0 +1,141 @@
+/*Global*/
+/*## CSS*/
+/*- Intro : taille de la police 1.2rem, interlignage de 1.5em, justification du texte*/
+/*- Utilisation de classes pour les boîtes : box (commun), box1 à box6*/
+/*- Couleur de fond des boîtes : #CCC*/
+/*- Couleur de la bordure : rouge*/
+/*- Boîte 2 : marge de 2%*/
+/*- Boîte 3 : padding de 1% en haut et en bas, 2% à gauche et à droite*/
+/*- Boîte 4 : padding cf boîte 3 + bordure pleine de 2 pixels rouge*/
+/*- Boîte 5 : cf boîte 2 + boîte 4 + appliquer une largeur de 60%*/
+/*- Boîte 6 : cf boîte 5 + ajout box-sizing: border-box*/
+
+
+/*Fonts*/
+
+/*boder-box*/
+
+* {
+    /*margin:10px;*/
+    /*border: 1px solid rgba(0,0,0,0.2); */
+    /*align-self:center;*/
+    /*display:flex;*/
+    /*justify-content:center;*/
+    flex-direction:column;
+    /*width:90%;*/
+    font-family:sans-serif;
+    color:#111;
+    /*background:rgba(0,0,0,0.1);*/
+    text-align:justify;
+}
+
+body {
+    font-family : sans-serif;
+    /*color: #ccc;*/
+    /*background : #ccc;*/
+    align-items:left;
+    width:100%;
+    /*background:rgba(0,0,0,0.1);*/
+}
+
+header {
+    background:rgba(0,0,0,0.2);
+    border: 1px solid  #ff1a1a; 
+    align-items:center;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    width:100%;
+    font-size:1.2rem;
+    line-height:1.5em;
+    color:#ff0000;
+}
+
+main {
+    /*display:flex;*/
+    justify-content:left;
+    text-align:left;
+    align-content:left;
+    /*align-items:center;*/
+    line-height:none;
+}
+
+footer{
+    background:rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0,0.2); 
+    width:100%;
+    align-items:center;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    /*margin:10px;*/
+}
+
+a{
+    color:red;
+}
+
+li{
+    
+}
+
+img {
+    width:50px;
+    margin-top:10px;
+}
+
+sup{
+    font-size:10px;
+    font-weight:bold;
+    
+}
+
+h1{
+    color:red;
+}
+
+.box{
+    /*background-color:#CCC;*/
+    line-height:1.5em;
+}
+
+.box1{
+    background-color:#CCC;
+}
+
+.box2{
+    background-color:#CCC;
+    margin:2%;
+}
+
+.box3{
+    background-color:#CCC;
+     padding: 1% 2% 1% 2%;
+}
+
+.box4{
+    background-color:#CCC;
+    padding: 1% 2% 1% 2%;
+    border: 2px solid  #ff1a1a; 
+}
+/*- Boîte 4 : padding cf boîte 3 + bordure pleine de 2 pixels rouge*/
+/*- Boîte 5 : cf boîte 2 + boîte 4 + appliquer une largeur de 60%*/
+/*- Boîte 6 : cf boîte 5 + ajout box-sizing: border-box*/
+
+.box5{
+    background-color:#CCC;
+    margin:2%;
+    padding: 1% 2% 1% 2%;
+    border: 2px solid  #ff1a1a;
+    width:60%;
+}
+
+.box6{
+    background-color:#CCC;
+    margin:2%;
+    padding: 1% 2% 1% 2%;
+    border: 2px solid  #ff1a1a;
+    width:60%;
+    box-sizing:border-box;
+}
+

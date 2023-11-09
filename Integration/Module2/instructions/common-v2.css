@@ -1,0 +1,535 @@
+/*Global*/
+
+
+/*## CSS* DEMO1/
+/*- Intro : taille de la police 1.2rem, interlignage de 1.5em, justification du texte*/
+/*- Utilisation de classes pour les boîtes : box (commun), box1 à box6*/
+/*- Couleur de fond des boîtes : #CCC*/
+/*- Couleur de la bordure : rouge*/
+/*- Boîte 2 : marge de 2%*/
+/*- Boîte 3 : padding de 1% en haut et en bas, 2% à gauche et à droite*/
+/*- Boîte 4 : padding cf boîte 3 + bordure pleine de 2 pixels rouge*/
+/*- Boîte 5 : cf boîte 2 + boîte 4 + appliquer une largeur de 60%*/
+/*- Boîte 6 : cf boîte 5 + ajout box-sizing: border-box*/
+
+
+/*# Exercice dirigé: Template module 2*/
+
+/*## Consignes*/
+/*- Construre le template par défaut du module 2*/
+/*- Modifier la feuille de style commune*/
+
+
+/*Fonts*/
+
+
+/*boder-box*/
+
+* {
+    box-sizing:border-box;/* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+    flex-direction:column;
+    /*width:90%;*/
+    font-family:sans-serif;
+    color:#111;
+    /*background:rgba(0,0,0,0.1);*/
+    text-align:justify;
+    background-color:#e6e6e6;
+}
+
+html{
+    font-size:62.5%;/* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+    font-family : sans-serif;
+    font-size:1.6rem; /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */
+    /*color: #ccc;*/
+    /*background : #ccc;*/
+    /*align-items:left;*/
+    /*width:100%;*/
+    /*background:rgba(0,0,0,0.1);*/
+    margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	color: #555;
+	background-color: #eee;
+}
+
+h1{
+    color:red;
+    background:transparent;
+    font-size:4rem;
+}
+
+h2{
+    font-size:3.2rem;
+    color:#333;
+}
+
+h3{
+    font-size:2.4rem;
+}
+
+a{
+    color:#DD5735;
+    background:transparent;
+}
+
+/* Ajout d'un élément de décoration au survol */
+a:hover{
+    text-decoration:underline;
+    color:#000;
+}
+
+img {
+    width:80px;
+    margin-top:10px;
+}
+
+sup{
+    font-size:20px;
+    
+}
+
+header {
+    /*background:rgba(51,51,51,0.9);*/
+    background-color:#444;
+    /*border: 1px solid  #ff1a1a; */
+    align-items:center;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    /*width:100%;*/
+    font-size:1.2rem;
+    line-height:1.5em;
+    color:#999;
+    padding:1em;
+    
+}
+
+header p{
+    color:#e6e6e6;
+    background:transparent;
+}
+
+header h1{
+    margin:0;
+}
+
+main {
+    /*display:flex;*/
+    /*justify-content:left;*/
+    /*text-align:left;*/
+    /*align-content:left;*/
+    /*align-items:center;*/
+    /*line-height:none;*/
+    /*background-color:#e6e6e6;*/
+    padding:2em;
+    
+}
+
+article{
+    background-color:#fff;
+    padding:1em;
+}
+
+footer{
+    background-color:rgba(51,51,51,0.9);
+    background-size:cover;
+    /*border: 1px solid rgba(0,0,0,0.2); */
+    /*width:100%;*/
+    align-items:center;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    /*margin:10px;*/
+    color:#fff;
+    padding:2em;
+}
+
+footer p{
+    color:#ffffff;
+    background:transparent;
+}
+
+/********** demo1 **********/
+
+.box{
+    /*background-color:#CCC;*/
+    line-height:1.5em;
+}
+
+.box1{
+    background-color:#CCC;
+}
+
+.box2{
+    background-color:#CCC;
+    margin:2%;
+}
+
+.box3{
+    background-color:#CCC;
+     padding: 1% 2% 1% 2%;
+}
+
+.box4{
+    background-color:#CCC;
+    padding: 1% 2% 1% 2%;
+    border: 2px solid  #ff1a1a; 
+}
+/*- Boîte 4 : padding cf boîte 3 + bordure pleine de 2 pixels rouge*/
+/*- Boîte 5 : cf boîte 2 + boîte 4 + appliquer une largeur de 60%*/
+/*- Boîte 6 : cf boîte 5 + ajout box-sizing: border-box*/
+
+.box5{
+    background-color:#CCC;
+    margin:2%;
+    padding: 1% 2% 1% 2%;
+    border: 2px solid  #ff1a1a;
+    width:60%;
+}
+
+.box6{
+    background-color:#CCC;
+    margin:2%;
+    padding: 1% 2% 1% 2%;
+    border: 2px solid  #ff1a1a;
+    width:60%;
+    box-sizing:border-box;
+}
+
+/******************demo2**********/
+.parent{
+    /*border-style:dotted;*/
+    border:1px dashed #DD5735;
+    
+}
+
+.card, .cards{
+    display:flex;
+    /*justify-content:center;*/
+    /*text-align:center;*/
+    background-color:#ffffff;
+    height:100px;
+    width:100%;
+    padding:2em;
+    /*margin:0 0 0 20p x;*/
+    /*border:2px solid black;*/
+    /*border-box:none;*/
+    /*padding:10px;*/
+    /*width: 300px;*/
+    /*height: 100px;*/
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+.gutter{
+    margin:1em;
+}
+
+.code{
+    background-color:#ddd;
+    padding:0.5em;
+    border:1px solid #bbb;
+    /*text-decoration:none;*/
+    font-family:Monaco, monospace;
+    font-size:14px;
+    color:#0000;
+    /*height:5px;*/
+    /*background:transparent;*/
+    
+}
+
+/*.cards, .gutter{*/
+/*    display: flex;*/
+/*    flex-direction:right;*/
+/*    margin: 0 0 0 20px;*/
+/*    padding:10px;*/
+    /*background:transparent;*/
+/*}*/
+
+pre, div{
+   background:transparent;
+   boder-box:2px solid #ff1a1a;
+}
+
+/************demo 5************/
+/*# Exercice dirigé: Table*/
+
+/*## Ecrire le code HTML de la table*/
+/** Utiliser le rechercher/remplacer pour aller plus rapidement*/
+/** Par exemple en remplaçant le caractère "Tabulation" par "</td><td>"*/
+
+
+/*## Couleurs*/
+/** Bordure des TD: #ddd*/
+/** Bordure inférieur des entêtes et inférieur du pied: #999*/
+
+/**************/
+
+table{
+    width:40%;
+    /*height:30px;*/
+}
+
+th, td{
+  border: 1px solid #ddd;
+}
+
+.tableau1, .tableau2{
+    height:40px;
+}
+
+/*.thRegions{*/
+/*    font-size:30px;*/
+/*}*/
+
+caption{
+    font-size:30px;
+}
+.regions{
+    width:100%;
+}
+.regions thead{
+    text-align:center;
+    font-weight:bold;
+}
+
+.regions tbody{
+    text-align:center;
+    
+}
+
+.regions tfoot{
+    border-top: 2px solid #999;
+}
+
+.regions td {
+    padding:1em;
+    text-align:right;
+    border: 1px solid #ddd;
+}
+
+.regions th {
+    text-align:center;
+    
+}
+
+.regions tbody tr:nth-child(odd) td{
+    background-color: #eee;
+}
+
+/*******demo6 *******/
+/*# Exercice dirigé: Flexbox*/
+
+/*## Première étape*/
+/*- Faire un premier UL LI avec 6 LI*/
+/*- Remplir les LI avec des lettres ou quelques mots (un grand texte Lorem ne permet pas de visualiser correctement les alignements)*/
+/*- Appliquer les classes .cards et .parent sur le UL*/
+/*- Appliquer une premier classe de test (test-1 ou test-default), ajouter la propriété flex à cette classe dans le CSS*/
+
+/*## Répéter l'opération pour chaque test*/
+/*- Dupliquer la liste HTML et la classe CSS, ajouter ou modifier les propriétés CSS*/
+/*- Mettre un titre adapté*/
+/*- Attention le dernier test est très différent*/
+/**********************/
+
+
+/* L'entête de la page */
+/*.header {*/
+/*	padding: 1em;*/
+/*	text-align: center;*/
+/*	color: #999;*/
+/*	background-color: #444;*/
+/*}*/
+
+/* Pas de marge pour le titre pricipal */
+/*.header h1 {*/
+/*	margin: 0;*/
+/*}*/
+
+/* Le pied de page */
+/*.footer {*/
+/*	padding: 2em;*/
+/*	text-align: center;*/
+/*	color: #fff;*/
+/*	background-color: #444;*/
+/*}*/
+/* *****************************************************************
+CONTAINER
+***************************************************************** */
+
+/* Le container permet de limiter la largeur d'un contenu */
+.container {
+	max-width: 1100px; /* On donne une largeur au container */
+	margin-left: auto; /* On centre son contenu */
+	margin-right: auto;
+}
+
+.cards{
+  display:flex;
+  flex-direction:row;
+  width:980px;
+  border:1px dotted #ff0000;
+  margin:0;
+  padding:0;
+}
+
+/*.parent{*/
+/* height:auto; */
+/* width:auto;*/
+/*}*/
+
+li{
+  /*liste-style:none;*/
+  border: 1px solid #999;
+  width:100px;
+  height:100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:0px;
+  padding:0px;
+  min-height:0px;
+  min-width:0px;
+}
+
+ul[class*="test"]{
+    padding:0;
+    list-style:none;
+}
+
+.test-1{
+    flex-direction:row;
+    /*align-items:left;*/
+    /*align-content:left;*/
+}
+
+.test-2 {
+    flex-direction:row-reverse;
+    /*align-content:right;*/
+}
+
+.test-3{
+    display: flex;
+    flex-direction:column;
+}
+
+.test-4{
+    flex-direction:column-reverse;
+}
+
+.test-5{
+    display: flex;
+    flex-wrap: nowrap;
+	width: 300px;
+}
+
+.test-6{
+    flex-wrap: wrap;
+    width:300px;
+}
+
+.test-7{
+    align-items:center;
+}
+
+.test-8{
+    align-items:flex-start;
+}
+
+.test-9{
+    align-items:flex-end;
+}
+
+[class*="test-7, test-8, test-9"] li:nth-child(odd) {
+	line-height: 4em;
+}
+
+.test-10{
+    justify-content:center;
+}
+
+.test-11{
+    justify-content:flex-start;
+}
+
+.test-12{
+    justify-content:flex-end;
+}
+
+.test-13{
+    justify-content:space-between;
+}
+
+.test-14{
+    justify-content:space-around;
+}
+
+.test-15{
+    justify-content:space-evenly;
+}
+
+/*.test-16{*/
+/*    order:4,2,5,1,6,3;*/
+/*}*/
+/*********ORDER*******/
+
+.test-16 {
+	display: flex;
+}
+.test-16 li:nth-child(1) {
+	order: 4;
+}
+.test-16 li:nth-child(2) {
+	order: 2;
+}
+.test-16 li:nth-child(3) {
+	order: 6;
+}
+.test-16 li:nth-child(4) {
+	order: 1;
+}
+.test-16 li:nth-child(5) {
+	order: 3;
+}
+.test-16 li:nth-child(6) {
+	order: 5;
+}
+
+/** **************************/
+/*grow*/
+/************************** */
+.test-17{
+  flex-grow:1;
+  flex-basis:1em;
+}
+
+.test-17 > * {
+	flex-grow: 1;
+	flex-basis: 1em;
+}
+.test-17 .x2 {
+	flex-grow: 2;
+}
+.test-17 li:nth-child(3) {
+	flex-grow: 2;
+}
+
+
+/* *************************
+shrink
+************************* */
+.test-18{
+ flex-grow:1;
+  flex-shrink:1;
+  flex-basis:10em;
+}
+
+
+
+/********** circl : */
+/*/circle-2{*/
+/*    width:0;*/
+/*    border-radius: 50%;*/
+/*}*/

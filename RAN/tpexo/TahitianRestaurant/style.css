@@ -1,0 +1,430 @@
+/* DOCUMENT INFORMATION 
+    - Document : 
+    - Version : 1.0.0
+    - Author : Marie-Noelle
+*/
+
+/* COLORS
+    - defaut body text #050404
+    - h1
+    - h2
+    - h3
+    - h4
+    - h5
+    - h6
+    
+    - button
+    - button:hover
+    
+    -boder : transparent
+*/
+
+/* FONTS
+    - Default : Muli Regular
+    - Subtitle
+*/
+
+/* CSS DIRECTORY 
+    1. =GLOBAL
+    2. =HEADER
+    3. =
+*/
+/* GLOBAL
+****************************************/
+@font-face {
+    font-family: ClaireHandRegular;
+    /*src: local("ClaireHandRegular","Muli-Regular"),*/
+    src: url("fonts/ClaireHandRegular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Muli-Regular;
+    src: url("fonts/Muli-Regular.ttf");
+}
+
+/*@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");*/
+
+/*GLOBAL*/
+
+html {
+    font-family: 'Muli-Regular', sans-serif;
+    color:#050404;
+    background-color:#ffffff;
+}
+
+h1 {
+    font-size: 80px;
+    font-family:'Muli-Regular';
+}
+
+p {
+    
+}
+
+/* HEADER 
+******************************************************/
+
+header {
+    height: 100vh;
+    background-image: url('img/poissonCru.jpg');
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1,
+header p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.navbar.navbar-expand-lg.bg-light {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.bg-light {
+    background-color: rgb(255, 255, 255, 0) !important;
+}
+
+.navbar-nav .nav-link.active,
+.nav-link,
+.navbar-brand {
+    color: white !important;
+    /*display:flex;*/
+    /*justify-content:center;*/
+}
+
+/*.navbar ul{*/
+
+/*    display:flex;*/
+
+/*    flex-direction:row;*/
+
+/*    width:100%;*/
+
+/*    justify-content:space-between;*/
+
+/*    align-items:flex-end;*/
+
+/*}*/
+
+/*MAIN*/
+
+#ourStory {
+    background-color: #680101;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    color: white;
+    /*display:flex;*/
+    /*flex-direction:column;*/
+}
+
+.storyPhoto {
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 20px;
+    float: left;
+}
+
+.storyTitle {
+    font-family: 'Muli-Regular';
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#ourStory h5:after {
+    display: block;
+    height: 2px;
+    background-color: white;
+    width: 100px;
+    content: "";
+    margin: 10px auto 0 auto;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    margin-left: 50px;
+}
+
+/*main .card{*/
+
+/*    background-color: rgb(255, 255, 255, 0) !important;*/
+
+/*    margin-top:50px;*/
+
+/*    border: none;*/
+
+/*    width:400px;*/
+
+/*height:280px;*/
+
+/*}*/
+
+#ourStory img {
+    width: 200px;
+    height: 270px;
+}
+
+/*SIGNATURES*/
+
+#signature {
+    /*background-image:url('img/puaa.webp');*/
+    background-size: cover;
+    /*background-color: rgb(255, 255, 255, 0) !important;;*/
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(to left, transparent, black),
+    url("img/puaa.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+}
+
+#signature img {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*.signRecepes {*/
+
+/* display:flex;*/
+
+/* flex-direction:column;*/
+
+/* text-align:center;*/
+
+/* align-self:center;*/
+
+/* margin-left:50px;*/
+
+/*}*/
+
+.signatureTitle {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    /*height:120px;*/
+    justify-content: center;
+    color: white;
+    /*font-weight:bold;*/
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+#signature h5:after {
+    display: block;
+    height: 2px;
+    background-color: #680101;
+    width: 100px;
+    content: "";
+    margin: 15px auto 6px auto;
+    align-self: center;
+}
+
+.signatureP {
+    text-align: center;
+    justify-content: center;
+    /*height:4px;*/
+    /*width:80px;*/
+}
+
+/*MENU*/
+
+#menuList {
+    width: 100%;
+    height: 50vh;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*align-items: center;*/
+    text-align:center;
+    /*border:none;*/
+}
+
+.menuList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prix{
+    width:10vh;
+}
+
+.descriptif{
+    /*width:100%;*/
+    height:30vh;
+    justify-content:center;
+}
+
+
+
+/*CARROUSSEL*/
+
+#carroussel {
+    background-size: cover;
+    background-color: gray;
+    /*width:100%;*/
+    height: 40vh;
+}
+
+/*#carouselExample {*/
+/*    width: 20vw;*/
+/*    height: 40vh;*/
+/*}*/
+
+.carousel-inner img {
+    width: 500px;
+    height: 400px;
+}
+
+/*img {*/
+/*    overflow-clip-margin: content-box;*/
+/*    overflow: clip;*/
+/*}*/
+
+/*LISTE AIDE*/
+
+#aideList {
+    background-color: #5b5656;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+.table {
+    /*width:100%;*/
+    /*height:5vh;*/
+    color: white;
+    /*margin-left:10px;*/
+    /*text-align:center;*/
+}
+
+.tableDiv {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: black;
+    background-size: cover;
+    color: gray;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    /*margin-top:10px;*/
+}
+
+footer .table {
+    color: gray;
+}
+
+/*.reseauPictos .bx-ul{*/
+
+/*    color:gray;*/
+
+/*display:flex;*/
+
+/*align-self:flex-end;*/
+
+/*    align-items:flex-end;*/
+
+/*    width:100%;*/
+
+/*    height:5px;*/
+
+/*}*/
+/*RWD*/
+/************ MEDIA SCREEN ***************/
+
+@media screen and (max-width:900px) {
+    #steps .contenu ul {
+        flex-direction:column;
+        align-items:center;
+        max-width:100%;
+    }
+    
+    footer {
+        display:flex;
+        /*align-content:space-evenly;*/
+    }
+}
+@media screen and (max-width: 1280px) {
+
+    /*   header, footer, section, article{*/
+    /*flex-direction:column;*/
+    /*align-self:center;*/
+    /*width:100%;}*/
+    
+    p {
+        /*color:#747474;*/
+        text-align: center;
+        font-family: ClaireHandRegular, Muli-Regular, Arial, sans-serif;
+        font-size: 1em;
+        justify-content: center;
+    }
+
+    header .contenu {
+        /* height: 38px;
+        margin-top: 24px;
+        margin-bottom: 24px;*/
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+    }
+
+    header .contenu {
+        padding: 0px;
+    }
+    
+    steps .contenu ul li {
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+    }
+
+    #step-1,
+    #step-2,
+    #step-3,
+    #step-4 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+}
+
+/* Sur tous types d'écrans orientés verticalement */
+
+ 

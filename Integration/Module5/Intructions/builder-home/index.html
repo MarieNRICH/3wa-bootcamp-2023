@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Solar maquette en SASS">
+    <title>Module5 - SASS - Builder-home</title>
+    <link rel="icon" href="img/logo.jpeg">
+	<link href="https://fonts.googleapis.com/css?family=Athiti:500|Merienda:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/brands.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/solid.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="script.js" type="text/css" />
+</head>
+<body>
+    <header>
+        <!--<div class="video-container">-->
+        <!--<div class="video-wrapper">-->
+        <!--    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FVendeeVaa%2Fvideos%2F4517257421711288%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>-->
+        <!--</div>-->
+        <!--</div>-->
+        <div class="nav-container">
+        
+        <a href="index.html"><img src="img/logo.jpeg" alt="Logo Rima Here" class="logo">
+        <!--<strong>RIMA HERE</strong>-->
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about-us">A propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact-nous</a></li>
+            </ul>
+        </nav>
+     </div>    
+    </header>
+    
+    <main>
+        <div class="container-bg-video">
+            <video id="background-video" autoplay loop muted>
+            
+            <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+            
+            </video>
+            
+            <div class="content">
+            
+                <h1>BIEN PLUS QU'UNE RIVIÈRE</h1>
+            
+                <h2>Une source de vie</h2>
+            
+                <button id="btnVideo" onclick="playAndPause()">Pause</button>
+            
+            </div>
+        </div>
+        
+        <div class="container">
+        <section class="about-us">
+            <article class="us">
+                <img src="img/ori.jpg" class="ori" alt="Danseuse"></img>
+                <!--<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FVendeeVaa%2Fvideos%2F1324759935064651%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>-->
+                <div class="apropos">
+                <h3>A propos</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa reprehenderit alias quasi nulla fugit. Repellat, doloribus, soluta, ex, fugit nulla modi voluptatum alias impedit repellendus laboriosam qui dolorum sed minus.</p>
+                </div>
+            </article>
+        </section>
+        
+        <h2>Nos Ateliers</h2>
+        <section class="services">
+            <article>
+				<h3 class="ori">Ori Tahiti</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequatur pariatur quod aperiam ratione quo ipsum eligendi expedita itaque atque. Tempore, est, adipisci maxime nostrum quae omnis itaque vitae numquam minima consectetur aspernatur saepe voluptatibus fugit. Ab, aliquid, velit ducimus repellat maiores nulla totam placeat doloremque iusto ipsa nostrum dolor.</p>
+				<div><a href="#" class="plus">En savoir plus</a></div>
+			</article>
+			<article>
+				<h3 class="uku">Ukulele</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, sed, doloribus, vel necessitatibus veniam expedita deleniti voluptas nemo impedit ea voluptatem non neque incidunt ducimus dicta sint maiores ullam ipsum sunt dolorem. Odio, reprehenderit, asperiores incidunt minus ut quisquam eaque quos beatae eos saepe ratione delectus dolore illum maiores ducimus.</p>
+				<div><a href="#" class="plus">En savoir plus</a></div>
+			</article>
+			<article>
+				<h3 class="percu">Percussion</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, modi iusto iure sapiente quo eos ullam minima distinctio corporis ducimus.</p>
+				<div><a href="#" class="plus">En savoir plus</a></div>
+			</article>
+	    	<article>
+    			<h3 class="vaa">Pirogue</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, tenetur, autem placeat expedita at reiciendis optio quod eaque nam odio!</p>
+				<div><a href="#" class="plus">En savoir plus</a></div>
+			</article>
+        </section>
+        </div>
+        <div class="slider">
+                <div><img src="img/img1.jpg" alt="Moorea paddlers"></div>
+                <div><img src="img/img2.jpg" alt="Percussions marquisienne"></div>
+                <div><img src="img/img3.jpg" alt="Vannerie avec Mg fenua creation"></div>
+                <div><img src="img/img4.jpg" alt="Groupe de danseuses sur la plage"></div>
+        </div>
+        <section class="comments">
+            <h2>"</h2>
+            <figure>
+                <blockquote>
+                    <p>« Si tu étais venu chez nous, nous t'aurions accueilli à bras ouverts. Mais tu es venu ici chez toi, et on ne sait comment t'accueillir chez toi »,</p>
+                </blockquote>
+                <figcaption>-Henri Hiro, cinéaste, dramaturge, poète et militant de Polynésie française pour ...
+                    <cite>10 mars 1990 - Huahine.</cite>
+                </figcaption>
+            </figure>
+            
+            <div class="slider-badges">
+                <div><img src="img/mission.webp" alt="Mission"></div>
+                <div><img src="img/transmission.webp" alt="Transmission"></div>
+                <div><img src="img/culture.webp" alt="Culture"></div>
+                <div><img src="img/passion.webp" alt="Passion"></div>
+            </div>
+        </section>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $('.slider').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+        });
+    });
+
+    </script>
+</body>
+</html>

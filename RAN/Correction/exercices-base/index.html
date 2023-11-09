@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+    <ul id="liste">
+
+    </ul>
+
+    <script>
+        //Exercice 8//
+        var truc = 0;
+        //document.getElementById('liste').innerHTML += "<li>" + truc + "</li>";
+        for (let truc = 0; truc < 20; truc += 2) {
+            if (truc == 10) {
+                document.getElementById('liste').innerHTML += "<li><b>" + truc + "</b></li>";
+            } else {
+                document.getElementById('liste').innerHTML += "<li>" + truc + "</li>";
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>

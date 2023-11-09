@@ -1,0 +1,66 @@
+/* Le code CSS de la démo */
+/**********************************************************************************/
+/*instructions : # Exercice dirigé: La propriété position
+
+## La propriété position et ses différentes valeurs: static, relative, absolute, fixed et sticky
+- Ajouter les classes .container et .parent au main
+- Ajouter 11 articles dans le main
+- Tester les différentes valeurs de la propriétét propriété position sur les articles en ajouter une classe dédiée à chaque valeur (laisser un article intermédiare à chaque fois)
+
+## Couleurs
+- static: #9c6
+- relative: #fc3
+- absolute: #f93
+- fixed: #69c
+- sticky: #f9c
+/*********************************************************************************/
+.container{
+	border:1px dashed red;
+}
+
+.parent{
+	
+}
+
+article{
+	
+}
+
+.stickyTop0{
+	background-color:#f9c;
+	position:sticky;
+	top:20px;
+}
+
+.static{
+	background-color:#9c6;
+	position:static;
+}
+
+.relativeGauche5em{
+	background-color:#fc3;
+	position:relative;
+	right:5em;
+}
+
+article .absoluteP{
+	background-color:#f93;
+	width: 159px;
+    height: 50px;
+    position: absolute;
+    right: 250px;
+    top: 1781px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fixed{
+	background-color:#69c;
+	position:fixed;
+    top: -101px;
+    width: 330px;
+    height: 468px;
+    right: 0;
+}

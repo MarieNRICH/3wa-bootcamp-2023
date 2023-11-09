@@ -1,0 +1,422 @@
+@font-face {
+    font-family: ClaireHandRegular;
+    /*src: local("ClaireHandRegular","Muli-Regular"),*/
+    src: url("fonts/ClaireHandRegular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Muli-Regular;
+    src: url("fonts/Muli-Regular.ttf");
+}
+
+/************BODY*************/
+
+body {
+    font-family: 'ClaireHandRegular', 'Muli-Regular', sans-serif;
+    font-size: 14px;
+    margin: 0px;
+}
+
+header,
+section,
+footer {
+    display: flex;
+    font-family: ClaireHandRegular, Muli-Regular, sans-serif;
+    /*box-sizing: border-box;*/
+    width: 100vw;
+    /*padding-left: calc(50% - var(--container-width) / 2);
+    padding-right: calc(50% - var(--container-width) / 2);*/
+    /*padding-left: auto;*/
+    /*padding-right: auto;*/
+}
+
+p {
+    text-align: center;
+    font-size: 12px;
+    font-family: ClaireHandRegular;
+}
+
+h1 {
+    font-family: Muli-Regular;
+    font-size: 24px;
+}
+
+h2 {
+    font-family: Muli-Regular,
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    height: 5vh;
+    width: 8vw;
+}
+
+/************ HEADER ***************/
+
+header {
+    display: flex;
+    background: #356d01;
+    justify-content: center;
+    color: white;
+    font-family: 'Muli-Regular';
+    padding: 10px 0 0 0;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    height: 70%;
+    width: 15%;
+}
+
+.headerH2 p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Muli-Regular;
+}
+
+.headerBio {
+    display: flex;
+    flex-direction: column;
+    font-family: Muli-Regular;
+    margin: 0px;
+    height: 28px;
+}
+
+.logo .listesDeroulante {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 150px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    /*align-items:flex-start;*/
+    /*align-self:center;*/
+}
+
+header .listesDeroulante {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 450px;
+    height: 40px;
+}
+
+.produits .regions {
+    border-radius: 5px;
+    width: 300px;
+    height: 20px;
+}
+
+select {
+    width: 232px;
+    height: -webkit-fill-available;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: space-between;
+    align-content: flex-end;
+    /*align-items:flex;*/
+}
+
+
+/************ MAIN ***************/
+
+#main-image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    height: 697px;
+    background: url(video/biomarket-static.png) center no-repeat;
+    /*background: url(video/biomarket.vid) center no-repeat loop muted autoplay;*/
+    border-radius: 2px;
+}
+
+#main-image .contenu {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd99;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+#main-image .contenu p {
+    font-size: 20px;
+    font-family: Muli-Regular;
+
+}
+
+#main-image .contenu {
+    text-align: center;
+    font-size: 31px;
+    color: black;
+    background-size: cover;
+    border-radius: 15px;
+    width: 701px;
+    height: 100%;
+    margin-top: 72px;
+}
+
+#main-image .contenu strong {
+    font-weight: bold;
+}
+
+
+
+#main-image .fleche-bas {
+    margin-top: 50px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#main-image img {
+    height: 70px;
+    width: 50%;
+    align-items: center;
+}
+
+/************ STEPS ***************/
+
+.duBio h1 {
+    font-family: ClaireHandRegular;
+    /*text-transform: uppercase;*/
+    align-self: center;
+    text-align: center;
+    font-size: 24px;
+    justify-content: center;
+}
+
+#steps h1:after {
+    display: block;
+    height: 2px;
+    background-color: green;
+    width: 80px;
+    content: "";
+    margin: 10px auto 0 auto;
+}
+
+/*span {*/
+
+/*    text-decoration: underline;*/
+
+/*    color: green;*/
+
+/*}*/
+
+strong {
+    color: green;
+}
+
+#steps .contenu {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    width: 100%;
+    /*height:auto;*/
+}
+
+#steps .contenu p {
+    font-size: 12px;
+    color: white;
+}
+
+#steps .contenu ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 30px;
+}
+
+#steps .contenu li {
+    width: 226px;
+    height: 288px;
+    border-radius: 0 8px;
+    margin: 50px;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#steps img {
+    height: 120px;
+    width: 116px;
+    align-items: center;
+}
+
+#step-1 {
+    background-color: pink;
+}
+
+#step-1 h4::before {
+    display: flex;
+    flex-direction: column;
+    /*content: url(pictos/local.svg);*/
+    padding-bottom: 64px;
+}
+
+#step-2 {
+    background-color: #edd8a6;
+}
+
+#step-2 h4::before {
+    display: flex;
+    flex-direction: column;
+    /*content: url(pictos/saison.svg);*/
+    padding-bottom: 64px;
+}
+
+#step-3 {
+    background-color: #5fdd5d;
+}
+
+#step-3 h4::before {
+    display: flex;
+    flex-direction: column;
+    /*content: url(pictos/pouce.svg);*/
+    padding-bottom: 64px;
+}
+
+#steps p,
+#contact p {
+    text-align: center;
+    font-size: 12px;
+    font-family: Muli-Regular;
+}
+
+
+/************ FOOTER ***************/
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #bab4b4;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+footer .contenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: -webkit-fill-available;
+}
+
+footer .contenu p {
+    display: flex;
+    /*padding-top: 54px;*/
+    /*padding-bottom: 54px;*/
+    /*align-content:flex-end;*/
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer .credit {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: ClaireHandRegular;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+footer .contact {
+    display: flex;
+    text-align: left;
+    font-family: ClaireHandRegular;
+    /*align-items:flex-end;*/
+    align-items: center;
+    justify-content: flex-end;
+    /*margin: 0 -184px 0 510px;*/
+    width: 67vh;
+}
+
+footer img {
+    height: 70px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/************ MEDIA SCREEN ***************/
+
+@media screen and (max-width:900px) {
+    #steps .contenu ul {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    /*   header, footer, section, article{*/
+    /*flex-direction:column;*/
+    /*align-self:center;*/
+    /*width:100%;}*/
+    p {
+        /*color:#747474;*/
+        text-align: center;
+        font-family: ClaireHandRegular, Muli-Regular, Arial, sans-serif;
+        font-size: 1em;
+        justify-content: center;
+    }
+
+    header .contenu {
+        /* height: 38px;
+        margin-top: 24px;
+        margin-bottom: 24px;*/
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+    }
+
+    header .contenu {
+        padding: 0px;
+    }
+
+    steps .contenu ul li {
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+    }
+
+    #step-1,
+    #step-2,
+    #step-3 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+}
+
+/* Sur tous types d'écrans orientés verticalement */

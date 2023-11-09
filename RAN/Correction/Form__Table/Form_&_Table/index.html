@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Mon superbe questionnaire</legend>
+            <label>Votre nom:</label>
+            <input type="text" name="nom">
+            <label>Votre prénom:</label>
+            <input type="text" name="prénom">
+            <label>Adresse mail:</label>
+            <input type="mail" name="mail">
+            <label>Votre âge:</label>
+            <input type="number" name="age">
+            <label>Votre sexe</label>
+            <div>
+                <input type="radio" value="Homme"><label>Homme</label>
+            </div>
+            <div>
+                <input type="radio" value="Femme"><label>Femme</label>
+            </div>
+            <select>
+                <option disabled>--Choix--</option>
+                <option value="">Développeur</option>
+                <option value="">Intégrateur</option>
+                <option value="">Chef de projet</option>
+            </select>
+            <label>Votre date de naissance:</label>
+            <input type="date" name="date">
+            <label>Votre couleur préférée:</label>
+            <input type="color" name="couleur">
+            <label>Votre niveau en codage:</label>
+            <input type="range" name="niveau">
+            <label>Votre photo:</label>
+            <input type="file" name="photo">
+            <label for="langage">Langages informatiques maîtrisés:</label>
+            <div>
+                <input type="checkbox" name="langage" value="HTML"><label>HTML</label>
+            </div>
+            <div>
+                <input type="checkbox" name="langage" value="CSS"><label>CSS</label>
+            </div>
+            <div>
+                <input type="checkbox" name="langage" value="PHP"><label>PHP</label>
+            </div>
+            <div>
+                <input type="checkbox" name="langage" value="Javascript"><label>Javascript</label>
+            </div>
+            <div>
+                <input type="checkbox" name="langage" value="SQL"><label>SQL</label>
+            </div>
+            <textarea name="commentaire" id="" cols="30" rows="10">Des commentaires?</textarea>
+            <input class="btn-submit" type="submit" value="Envoyer">
+        </fieldset>
+    </form>
+
+    <h2>Tableau 1</h2>
+
+    <div class="tab-container">
+        <table>
+            <tr>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+                <th>Samedi</th>
+                <th>Dimanche</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>Tableau 2</h2>
+
+    <div class="tab-container">
+        <table>
+            <tr>
+                <th rowspan="2">Truc</th>
+                <th colspan="4">Jotain</th>
+
+            </tr>
+            <tr>
+                <td colspan="2">Chose</td>
+                <td colspan="2">Bidule</td>
+            </tr>
+            <tr>
+                <td>Sashe</td>
+                <td colspan="2">Aliquid</td>
+                <td colspan="2">Rud</td>
+            </tr>
+            <tr>
+                <td colspan="3">Something</td>
+                <td colspan="2">Rhywbeth</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

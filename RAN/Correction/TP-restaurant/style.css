@@ -1,0 +1,30 @@
+header {
+    height: 100vh;
+    background-image: url('images/HeaderImg.jpeg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1,
+header p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.navbar.navbar-expand-lg.bg-light {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.bg-light {
+    background-color: rgb(255, 255, 255, 0) !important;
+}
+
+.navbar-nav .nav-link.active,
+.nav-link,
+.navbar-brand {
+    color: white !important;
+}

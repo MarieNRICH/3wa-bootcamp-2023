@@ -1,0 +1,89 @@
+body{
+  background-image:url("ressources/phare.jpg");
+  background-size:cover;
+  background-position:center;
+  
+}
+
+main {
+    margin: 2% 4%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #fdfdfd99;*/
+    /*background-size: cover;*/
+    /*border-radius: 5px;*/
+}
+
+section {
+  margin:2%;
+  padding:4%;
+  width:auto;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  background-color:rgba(255, 255, 255, 0.6);
+}
+
+.container{
+  width:auto;
+  height:auto;
+}
+
+.articlePhoto1, .articlePhoto2{
+    font-size: 1.4rem;
+    margin: 0 1%;
+    /*padding: 16px;*/
+}
+
+.articlePhoto{
+  display : flex;
+  flex-direction: row;
+}
+
+.img1{
+    width:100%;
+    height:auto;
+}
+
+article {
+  background-color:transparent;
+}
+/* *****************************************************************
+MEDIA QUERIES
+***************************************************************** */
+/*demo1-DesktopFirst*/
+/*# Exercice dirigé: Media queries desktop first*/
+
+/*Reproduire la mise en page proposée par les maquettes en commençant par la version desktop.*/
+/*Les points de rupture sont : 1200px pour les tablettes et 780px pour les mobiles. */
+/****************************************************************** */
+/*@media only screen and (max-width: 1200px) {*/
+/*   For desktop: */
+  
+/*  article{*/
+/*    width: 50%;*/
+/*  }*/
+/*}*/
+
+
+/*@media only screen and (max-width: 780px) {*/
+/*   For mobile phones: */
+/*  .articlesBlock{*/
+/*    flex-direction:column;*/
+/*    width:100%;*/
+/*  }*/
+  
+/*}*/
+
+/*@media only screen and (max-width: 600px) {*/
+/*   For tablets: */
+/*  main .container, .articlesBlock{*/
+/*    justify-content:space-between;*/
+/*    flex-wrap:wrap;*/
+/*    flex-direction:row;*/
+/*    width:50%;*/
+/*  }*/
+/*}*/

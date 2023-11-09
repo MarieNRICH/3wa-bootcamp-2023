@@ -1,0 +1,8 @@
+<h1>Bienvenue sur le blog</h1>
+
+<?php foreach($products as $product):?>
+    
+    <h2><?= $product['name']; ?></h2>
+    <small><?= $product['price']; ?></small>
+    <p><?= $product['description']; ?></p>
+<?php endforeach; ?>

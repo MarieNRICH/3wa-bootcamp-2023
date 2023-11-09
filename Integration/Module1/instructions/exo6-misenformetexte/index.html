@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mise en forme de texte</title>
+    <!--<link rel="stylesheet" href="style.css" type="text/css" />-->
+    <link rel="stylesheet" href="../common-v1.css" type="text/css" />
+    <link rel="stylesheet" href="theme.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>
+            Module 1 - Mise en forme
+        </h1>
+        <p>Découverte de la mise en forme du texte</p>
+    </header> 
+    <main>
+        <h2>Mise en forme des caratères</h2>  
+        <p>Utilisation des proriétés <b>font-xxx</b></p>
+            <h3>La taille</h3>
+                <p>La propriété CSS <b>font-size</b> permet de définir la taille utilisée pour le texte.</p>
+                <ul>
+                    <li class="item1">On peut utiliser une des valeurs prédéfinies comme <b>font-size: medium</b> mais ce n'est pas très utilisé.</li>
+                    <li class="item2">On peut utiliser une des valeurs prédéfinies comme <b>font-size: large</b> mais ce n'est pas très utilisé.</li>                
+                    <li class="item3">On peut utiliser une valeur absolue avec l'unité px, par exemple <b>font-size: 14px</b> mais ce n'est pas recommandé.</li>
+                    <li class="item4">On peut utiliser une valeur absolue avec l'unité pt (point comme dans Word), par exemple <b>font-size: 14pt</b> mais ce n'est pas recommandé.</li>
+                    <li class="item5">On peut utiliser une valeur proportionnelle en pourcentage, par exemple <b>font-size: 150%</b> mais ce n'est pas très utilisé.</li>
+                    <li class="item6">Il est recommandé d'utiliser une valeur proportionnelle en em, par exemple <b>font-size: 1.5em</b>.</li>
+                    <li class="item7">Comme alternative, on peut utiliser une valeur proportionnelle en rem (toujours proportionnelle à la taille définie à la racine du document, le ROOT, soit l'élément HTML), par exemple font-size: 1.5rem.</li>
+                </ul>
+                <!--<p><q>blablablablab</q></p>-->
+                <!--<blockquote>blibliblbibli</blockquote>-->
+            <h3>La graisse</h3>        
+            <p>La propriété CSS <b>font-weight</b> permet de définir la graisse utilisée pour le texte.</p>
+                <ul>
+                    <li class="fontWeight1">On peut mettre du texte en gras avec font-weight: bold.</li>
+                    <li class="fontWeight2">On peut supprimer le gras existant avec font-weight: normal (ici le texte est dans un élément &lt;b&tg;).</li>
+                    <li class="fontWeight3">Il est possible de donner un niveau de graisse (compris entre 100 et 900), par exemple font-weight: 700 (équivalent du gras) si prévu par la police de caractères.</li>
+                    <li class="fontWeight4">font-weight: bolder permet d'augmenter la graisse si possible.</li>
+                    <li class="fontWeight5">font-weight: lighter permet de diminuer la graisse si possible.</li>
+                </ul>
+            <h3>Le style</h3>
+            <p>La propriété CSS <b>font-style</b> permet de définir le style utilisé pour le texte.</p>
+            <ul>
+                <li class="fontStyle1">On peut mettre du texte en gras avec font-style: italic.</li>
+                <li class="fontStyle2">On peut supprimer le style existant avec font-style: normal (ici le texte est dans un élément &lt;em&gt;).</li>
+            </ul>
+                
+        <h2>Mise en forme des espacements</h2>   
+        <p>Utilisation des proriétés <b>line-height, letter-spacing, word-spacing </b>et <b>white-space</b></p>
+        
+            <h3>La hauteur de ligne</h3>
+                <p>La propriété CSS <b>line-height</b> permet de définir la hauteur de ligne du texte (donc indirectement l'espacement entre les lignes).</p>
+            <ul>
+                <li class="lineHeight1">Une ligne de texte avec la valeur <b>line-height: 1 </b>la valeur n'a pas d'unité.</li>
+                <li class="lineHeight2">Une ligne de texte avec la valeur <b>line-height: 1.5</b> la valeur n'a pas d'unité.</li>
+                <li class="lineHeight3">Une ligne de texte avec la valeur <b>line-height: 4 </b>la valeur n'a pas d'unité.</li>
+            </ul>
+            
+            <h3>L'espacement entre les lettres</h3>
+            <p>La propriété CSS <b>letter-spacing</b> permet de définir l'espacement entre les lettres.</p>
+            
+            <ul>
+                <li class=letterSpacing>Une ligne de texte avec la valeur letter-spacing: 0.5em avec l'unité em (de préférence).</li>
+            </ul>
+            
+            <h3>L'espacement entre les mots</h3>
+            <p>La propriété CSS <b>word-spacing</b> permet de définir l'espacement entre les mots.</p>
+            <ul>
+                <li class="wordSpace">Une ligne de texte avec la valeur <b>word-spacing: 2em</b> avec l'unité em (de préférence).</li>
+            </ul>
+            
+            <h3>Gestion des espaces (blancs)</h3>
+            <p>La propriété CSS <b>white-space</b> permet de gérer le comportement des espaces.</p>
+            <p class="whiteSpace1">Une ligne de texte avec la valeur <b>white-space: normal</b>, le texte retourne à la ligne normalement.</p>
+            <p class="whiteSpace2">Une ligne de texte avec la valeur <b>white-space: nowrap</b> le texte ne retourne pas à la ligne..</p>
+            <p class="whiteSpace3">Une ligne de texte avec la valeur <b>white-space: pre</b>
+			le texte se comporte comme dans l'élément &lt;pre&gt;.</li>
+   
+        <h2>Mise en forme du texte</h2>
+        <p>Utilisation des proriétés <b>text-xxx</b></p>
+            
+            <h3>L'alignement et la justification du texte</h3>
+            <p>La propriété CSS text-align permet de définir l'alignement du texte.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, velit nulla! Vitae dolorem dignissimos temporibus sequi possimus ad nostrum quod rem quo ea cupiditate enim repudiandae perferendis quaerat eos culpa, at totam omnis architecto ipsam maiores inventore consequuntur. Modi fuga inventore dolorem iusto dolore eius maxime vero ut quisquam numquam.</p>    
+            <p class="textAlignCenter">Aliquid labore qui ducimus eum, fuga, soluta beatae distinctio, rem harum totam laboriosam nostrum aspernatur. Veritatis officia placeat et, tenetur laboriosam aut deserunt voluptate dicta. Eaque delectus vitae nesciunt corporis illo nemo, debitis, tempore molestiae laudantium nam quidem totam unde quis tempora atque illum voluptas earum velit nostrum nihil corrupti?</p>
+            
+            
+            <p class="textAlignCenterJ">Temporibus provident ut harum ex facere, vitae error iure quis reprehenderit quam blanditiis asperiores est nesciunt pariatur saepe repellendus facilis rerum consequuntur fuga natus dolorem eos ipsam assumenda aliquid. Dignissimos tempore harum suscipit, repellat sint sunt ut labore eius ex, earum repellendus ad error consectetur fugit. Voluptatum voluptatem aperiam nulla!</p>
+            <p class="textAlignJutify">Voluptate tempore, illo explicabo voluptatem a quae, eligendi porro dolore molestiae, blanditiis dolorum magnam pariatur? Nihil rem nulla minima doloremque quis quia dolore? Eos amet, deserunt pariatur reprehenderit cumque veniam ea, repellat explicabo magni facilis rerum voluptatibus illo ipsum velit esse sint laboriosam similique enim quia dolores animi harum iusto!</p>
+           
+           <h3>L'indentation du texte</h3>
+           <p>La propriété CSS text-indent permet de définir l'indentation du texte.</p>
+           
+           <p class="textAlignCenter">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, velit nulla! Vitae dolorem dignissimos temporibus sequi possimus ad nostrum quod rem quo ea cupiditate enim repudiandae perferendis quaerat eos culpa, at totam omnis architecto ipsam maiores inventore consequuntur. Modi fuga inventore dolorem iusto dolore eius maxime vero ut quisquam numquam.</p>
+    
+            <h3>La transformation du texte</h3>
+            <p>La propriété CSS <b>text-transform</b> permet de d'effectuer une transformation de la casse du texte (cette méthode est recommandée).</p>
+            <ul>
+                <li class="textTransform1">La valeur <b>text-transform:none</b>, annule toute transformation</li>
+                <li class="textTransform2">Avec la valeur <b>text-transform: capitalize</b>, la première lettre de chaque mot sera affichée en capitale.</li>
+                <li class="textTransform3">Avec la valeur <b>text-transform: uppercase</b>, tous les caractères seront écrits en majuscule.</li>
+                <li class="textTransform4">Avec la valeur <b>text-transform: none</b>, tous les caractères seront écrits en minuscule.</li>
+            </ul>
+            
+            <h3>La décoration du texte</h3>
+            <p>La propriété CSS text-decoration permet de définir une décoration au texte. On peut définir le type, le style et la couleur de la décoration.</p>
+            <ul>
+                <li class="textDecoration1">La valeur <b>text-decoration: underline</b> permet de souligner le texte (avec la même couleur).</li>
+                <li class="textDecoration2">La valeur <b>text-decoration: underline</b> permet de supprimer le soulignement le texte (ici dans un lien).</li>
+                <li class="textDecoration3">La valeur <b>text-decoration: overline</b> permet de surligner le texte (avec la même couleur).</li>
+                <li class="textDecoration4">La valeur <b>text-decoration: underline red</b> permet de souligner le texte en rouge.</li>
+                <li class="textDecoration5">La valeur <b>text-decoration: underline double orangered</b> permet de souligner le texte en double (et en orange).</li>
+                <li class="textDecoration6">La valeur <b>text-decoration: underline green</b> permet de souligner le texte en tirets (et en vert).</li>
+                <li class="textDecoration7">La valeur <b>text-decoration: underline wavy teal</b> permet de souligner le texte avec une vague (et en bleu).</li>
+            </ul>
+
+            <!--h1{textblabla}+p{bmabin}+ul>li.textbla$*5-->
+            
+    </main> 
+    
+    <footer>
+        <img src="../logo-3wa.png" alt="Propriété de la 3W Academy"></img>
+        <p>Ce matériel pédagogique est la propriété de la <a href="https://apprendre-html.3wa.fr/courses">3W Academy</a>. Cet exercice a été réalisé par <a href=""> Christiane Dumont </a> et Stephane Pereck.</p>
+    </footer> 
+    
+</body>
+</html> 

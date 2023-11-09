@@ -1,0 +1,151 @@
+ul[class*="test"] {
+	padding: 0;
+	list-style: none;
+}
+
+/* *************************
+flex-direction
+************************* */
+
+.test-1 {
+	display: flex;
+}
+
+.test-2 {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.test-3 {
+	display: flex;
+	flex-direction: column;
+}
+.test-4 {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+/* *************************
+flex-wrap
+************************* */
+
+.test-5 {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 300px;
+}
+.test-6 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+}
+
+/* *************************
+align-items
+************************* */
+
+.test-7 {
+	display: flex;
+	align-items: center;
+}
+.test-8 {
+	display: flex;
+	align-items: flex-start;
+}
+.test-9 {
+	display: flex;
+	align-items: flex-end;
+}
+[class*="test-7,test-8,test-9"] li:nth-child(odd) {
+	line-height: 4em;
+}
+
+/* *************************
+justify-content
+************************* */
+
+.test-10 {
+	display: flex;
+	justify-content: center;
+}
+.test-11 {
+	display: flex;
+	justify-content: flex-start;
+}
+.test-12 {
+	display: flex;
+	justify-content: flex-end;
+}
+.test-13 {
+	display: flex;
+	justify-content: space-between;
+}
+.test-14 {
+	display: flex;
+	justify-content: space-around;
+}
+.test-15 {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* *************************
+order
+************************* */
+
+.test-16 {
+	display: flex;
+}
+.test-16 li:nth-child(1) {
+	order: 4;
+}
+.test-16 li:nth-child(2) {
+	order: 2;
+}
+.test-16 li:nth-child(3) {
+	order: 6;
+}
+.test-16 li:nth-child(4) {
+	order: 1;
+}
+.test-16 li:nth-child(5) {
+	order: 3;
+}
+.test-16 li:nth-child(6) {
+	order: 5;
+}
+
+/* *************************
+grow
+************************* */
+
+.test-grow {
+	display: flex;
+}
+.test-grow > * {
+	flex-grow: 1;
+	flex-basis: 1em;
+}
+.test-grow .x2 {
+	flex-grow: 2;
+}
+.test-grow li:nth-child(3) {
+	flex-grow: 2;
+}
+
+/* *************************
+shrink
+************************* */
+
+.test-shrink {
+	display: flex;
+}
+
+.test-shrink > * {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 10em;
+}
+
+.test-shrink li:nth-child(3) {
+	flex-shrink: 6;
+}

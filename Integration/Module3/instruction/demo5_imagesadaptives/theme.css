@@ -1,0 +1,46 @@
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.bloc-headerbloc, .bloc-footerbloc{
+  grid-column: 1 / 3;
+  grid-row: 1 / 6;
+  background: #ddd;
+}
+
+/* *****************************************************************
+MEDIA QUERIES
+***************************************************************** */
+
+/****************************************************************** */
+/*@media only screen and (max-width: 1024px) {*/
+/*   For desktop: */
+  
+/*  picture {*/
+/*    width: 50%;*/
+/*  }*/
+/*}*/
+
+
+/*@media only screen and (max-width: 768px) {*/
+/*   For mobile phones: */
+/*  .pictureSrcset{*/
+/*    flex-direction:column;*/
+/*    width:100%;*/
+/*  }*/
+  
+/*}*/
+
+/*@media only screen and (max-width: 960px) {*/
+/*   For tablets: */
+/*  main .container, .articlesBlock{*/
+/*    justify-content:space-between;*/
+/*    flex-wrap:wrap;*/
+/*    flex-direction:row;*/
+/*    width:50%;*/
+/*  }*/
+/*}*/

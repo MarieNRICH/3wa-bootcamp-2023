@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+	<link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Restaurant</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled">Disabled</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<h1>Restaurant</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi illum veniam impedit eum doloribus ab minima omnis quod debitis, facilis odit at repudiandae rem distinctio. Laudantium, dolorum maxime? Quis, officiis?</p>
+	</header>
+	<main id="ourStory">
+		<div class="storyPhoto">
+			<img src="img/chaudfroid.webp"></img>
+		</div>
+		<div class="story">
+			<div class="storyTitle">
+				<h5>Our Story</h5>
+			</div>
+			<div class="storyP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, aspernatur, tempora quos dolore illo iste assumenda blanditiis ipsa officiis consequuntur facere perspiciatis earum est! Blanditiis ea fugiat odit accusamus velit.</div>
+		</div>
+	</main>
+	<section id="signature">
+		<!--<div class="signRecepes">-->
+		<div class="signatureTitle">
+			<h5>Signatures Recipes</h5>
+		</div>
+		<div class="signatureP">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+		<!--</div>-->
+	</section>
+	<section id="menuList">
+		<div class="menuH1">
+			<h1>Our Menu</h1>
+		
+			<div class="menuL">
+			<div class="table-responsive1">
+				<table class="table">
+					<tr>
+						<th scope="col" class="platName">Poe au Lait de Coco</th>
+						<th scope="col" class="prix">5<i class="bi bi-currency-euro"></i></th>
+					<tr>
+					<th scope="row" class="descriptif">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+					sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+					magna aliquam erat volutpat.
+					</th>
+				</tr>
+				</table>
+			<div class="table-responsive2">
+			<table class="table">
+				<tr>
+					<th scope="col" class="platName">Poe au Lait de Coco</th>
+					<th scope="col" class="prix">5<i class="bi bi-currency-euro"></i></th>
+					<tr>
+					<th scope="row" class="descriptif">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+					</th>
+				</tr>
+			</table>
+		</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section id="carroussel">
+		<div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item">
+                        <img src="img/assiettedelamer.jpg" class="d-block w-100" alt="Assiette de la Mer">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="img/panierFruits.jpg" class="d-block w-100" alt="Panier de fruits">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="img/poissonFrit.jpg" class="d-block w-100" alt="Poisson frit">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+		<!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">-->
+		<!--	<ol class="carousel-indicators">-->
+		<!--		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
+		<!--		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
+		<!--		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
+		<!--	</ol>-->
+		<!--	<div class="carousel-inner">-->
+		<!--		<div class="carousel-item active">-->
+		<!--			<img src="img/poissonFrit.jpg" class="d-block w-100" alt="Poission Frit">-->
+		<!--		</div>-->
+		<!--		<div class="carousel-item">-->
+		<!--			<img src="img/poeCoconut.jpg" class="d-block w-100" alt="Poe au Potiron">-->
+		<!--		</div>-->
+		<!--		<div class="carousel-item">-->
+		<!--			<img src="img/panierFruits.jpg" class="d-block w-100" alt="Panier de fruits exotiques">-->
+		<!--		</div>-->
+		<!--	</div>-->
+		<!--	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">-->
+		<!--	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+		<!--	    <span class="sr-only">Previous</span>-->
+		<!--	  </a>-->
+		<!--	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">-->
+		<!--	    <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+		<!--	    <span class="sr-only">Next</span>-->
+		<!--	  </a>-->
+		<!--</div>-->
+	</section>
+	<section id="aideList">
+		<div class="tableDiv">
+		<table class="table table-borderless">
+			<thead>
+				<tr>
+					<th scope="col">Restaurant</th>
+					<th scope="col">Sitemap</th>
+					<th scope="col">Category</th>
+					<th scope="col">Menu</th>
+					<th scope="col">Contact Us</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Lorem ipsum dolor sit amet,</th>
+					<td>What we do</td>
+					<td>Concreting</td>
+					<td>About us</td>
+					<td><i class='bx bx-phone-call'></i>855-5564-6551</td>
+				</tr>
+				<tr>
+					<th scope="row">consectetuer adipiscing elit, sed do</th>
+					<td>Who we are</td>
+					<td>Decoration</td>
+					<td>Services</td>
+					<td><i class='bx bx-map'></i>Adress streets City</td>
+				</tr>
+				<tr>
+					<th scope="row">eiusmod tempor incididunt ut labore et</th>
+					<td>Projects</td>
+					<td>Building</td>
+					<td>Projects</td>
+					<td><i class='bx bxs-envelope'></i>your.maildomains.com</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	</section>
+	<footer>
+		<table class="table table-borderless">
+			<thead>
+				<tr>
+					<th scope="col">Copyrights free-psd-templates.com</th>
+					<th scope="col">Support</th>
+					<th scope="col">Contact Us</th>
+					<th scope="col">Disclaimer</th>
+					<th scope="col">Add More</th>
+					<th>
+						<i class='bx-fw bx bxl-facebook-square'></i>
+						<i class='bx bxl-behance'></i>
+						<i class='bx bxl-twitter'></i>
+						<i class="bi bi-instagram"></i>
+						<i class='bx bxl-pinterest'></i>
+						<i class='bx bxs-basketball'></i>
+						
+					</th>
+				</tr>
+			</thead>
+		</table>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>

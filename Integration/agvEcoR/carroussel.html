@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Le template des démos du module 4 (feuille de style commune en version 4)">
+	<title>RandEcoRes Carousel</title>
+	<link rel="icon" href="images/flavicon.jpg" type="image/jpg">
+	<link href="https://fonts.googleapis.com/css2?family=Athiti+One&family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+	<main class="container">
+		<section class="carroussel">
+			<div class="slider">
+				<div>
+				<figure class="figCarousel">
+					<img src="images/img1.jpg" alt="Ordesa">
+					<figcaption class="carouCaption">18 $<br>
+						<span>Ordesa</span>
+						<span>Merveille des Pyrénées !</span>
+					</figcaption>
+				</figure>
+				<div class="caption">
+					<p><a class="btn btn-secondary btn-lg local" href="https://www.labalaguere.com/gavarnie_ordesa_cirques_canyons_sans_frontieres.html">JE DÉCOUVRE&nbsp;</a></p>
+				</div>
+				</img>
+				</div>
+				<div>
+					<img src="images/img2.jpg">
+					<div class="caption">
+					<p><a class="btn btn-secondary btn-lg local" href="https://www.labalaguere.com/gavarnie_ordesa_cirques_canyons_sans_frontieres.html">JE DÉCOUVRE&nbsp;</a></p>
+					</div>
+					</img>
+				</div>
+				<div><img src="images/img3.jpg">
+				<div class="caption">
+				<p><a class="btn btn-secondary btn-lg local" href="https://www.labalaguere.com/gavarnie_ordesa_cirques_canyons_sans_frontieres.html">JE DÉCOUVRE&nbsp;</a></p>
+				</div>
+				</img>
+				</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script>
+		var mixer = mixitup(".container");
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.slider').slick({
+				dots: true,
+				//infinite: true,
+				//speed: 300,
+				//slidesToShow: 1,
+				//adaptiveHeight: true
+			});
+		});
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+body{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+
+/************* GLOBAL *************/
+.container{
+  /*display: flex;*/
+  /*flex-wrap:wrap;*/
+  /*justify-content:center;*/
+  /*padding: 10px;*/
+  /*margin-bottom: 10px;*/
+  height:20vh;
+  width:47vw;
+  border: 1px solid #050000;
+  box-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
+  margin: 34px 60px;
+}
+
+.inline-container{
+  display: inline-flex;
+  padding: 10px;
+  margin:10px;
+}
+
+.bleu{
+    background-color: #002395;
+    width:100%;
+    height:100%;
+}
+.vert {
+    background-color: #2B8;
+    width: 100%;
+    height:100%;
+}
+
+.jaune {
+    background-color: #ffce00;
+    width: 100%;
+    height: 100%;
+}
+
+.rouge {
+    background-color: #dd0000;
+    width: 100%;
+    height: 100%;
+}
+
+.blanc {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+.noir{
+    background-color: #050000;
+    width: 100%;
+    height: 100%;
+}
+
+/************* FRANCE *************/
+.france{
+    display:flex;
+}
+
+/************* ALLEMAGNE *************/
+.allemagne{
+    display:flex;
+    flex-direction:column;
+}
+
+/************* ANGLETERRE *************/
+.angleterre{
+    display:flex;
+    flex-direction:column;;
+}
+
+.angleterre div:nth-child(1) {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.angleterre div:nth-child(1) div:nth-child(1) {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.angleterre div:nth-child(1) div:nth-child(2) {
+    background-color: red;
+    width: 60px;
+    height: 100%;
+}
+
+.angleterre div:nth-child(2) {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: red;
+}
+
+ .angleterre div:nth-child(1) div:nth-child(3) {
+            background-color: white;
+            width: 100%;
+            height: 100%;
+        }
+
+ .angleterre div:nth-child(2) {
+            display: block;
+            width: 100%;
+            height: 60px;
+            background-color: red;
+        }
+
+        .angleterre div:nth-child(3){
+            display: flex;
+            
+            width: 100%;
+            height: 100%;
+        }
+
+        .angleterre div:nth-child(3) div:nth-child(1) {
+            background-color: white;
+            width: 100%;
+            height: 100%;
+        }
+        .angleterre  div:nth-child(3) div:nth-child(2) {
+            background-color: red;
+            width: 20%;
+            height: 100%;
+        }
+
+        .angleterre div:nth-child(3) div:nth-child(3) {
+            background-color: white;
+            width: 100%;
+            height: 100%;
+        }
+
+/************* SENEGALE *************/
+.senegale{
+    display:flex;
+}
+
+/************* LAOS *************/
+.laos{
+    display:flex;
+}
+
+/************* BRETAGNE *************/
+.breton{
+    display:flex;
+}
+
+/************ MEDIA SCREEN ***************/
+
+@media screen and (max-width:900px) {
+    .container .france .allemagne .angleterre .senegale .laos .breton {
+        flex-direction:column;
+        align-items:center;
+        max-width:100%;
+        justify-content:center;
+    }
+    
+    body {
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width: 1280px) {
+
+
+/*body {*/
+/*        display:flex;*/
+/*        flex-wrap:wrap;*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*        justify-content: space-evenly;*/
+/*    }*/
+
+
+/*}*/
+
+/* Sur tous types d'écrans orientés verticalement */
+
+ 

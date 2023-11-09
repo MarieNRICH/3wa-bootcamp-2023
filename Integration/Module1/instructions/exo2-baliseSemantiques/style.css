@@ -1,0 +1,89 @@
+/*Global*/
+
+* {
+    margin:10px;
+    /*border: 1px solid rgba(0,0,0,0.2); */
+    align-items:center;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    width:90%;
+}
+
+body {
+    font-family : arial;
+    color: #555;
+    background : rgb(240, 240, 240);
+    text-align:center;
+    max-width:980px;
+    align-items:center;
+    /*border: 1px solid rgba(0,0,0,0.2); */
+}
+
+/*.conteneur {*/
+/*    width:800px;*/
+/*    background-color:rgba(0,0,0,0.1);*/
+/*    align-items:center;*/
+    /*border: 1px solid rgba(0,0,0,0.2); */
+   
+/*}*/
+
+header, main, footer{
+    /*width:950px;*/
+    background-color:rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.2); 
+    width:70%;
+    align-items:center;
+}
+
+section{
+    background-color:rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.2); 
+    width:90%;
+    
+}
+
+article{
+    background-color:rgb(180, 180, 180);
+    /*border: 1px solid rgba(0,0,0,0.2); */
+    width:90%;
+    
+}
+
+aside, main aside{
+    background-color:rgb(180, 180, 180);
+    /*border: 1px solid rgba(0,0,0,0.2); */
+    width:90%;
+}
+h1, h2, h3, p, nav, aside{
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.2);
+}
+
+h2{
+    width:90%;
+}
+
+.pied-de-page{
+   background-color:rgb(240, 240, 240);
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   width:980px;
+}
+
+img {
+    /*border: 1px solid rgba(0,0,0,0.1);*/
+    /*background-color: rgba(0,0,0,0.2);*/
+    width:15%;
+}
+
+/*.pdp{*/
+    /*width:80%;*/
+/*    border: 1px solid rgba(0, 0, 0, 0.1);*/
+/*    background-color: rgba(0, 0, 0, 0.2);   */
+/*}*/
+
+aside p{
+    font-size:10px;
+}
+/**********rwd**********/
+

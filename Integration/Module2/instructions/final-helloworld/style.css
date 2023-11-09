@@ -1,0 +1,313 @@
+/*@font-face {*/
+/*    font-family: 'courgetteregular';*/
+/*    src: url('courgette-regular-webfont.woff2') format('woff2'),*/
+/*         url('courgette-regular-webfont.woff') format('woff');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
+
+
+
+/* *****************************************************************
+TOOLS
+***************************************************************** */
+
+* {
+	box-sizing: border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+	line-height: 1.5em;
+	font-family: "Lato", sans-serif;
+	color: #333;
+	/*display:flex;*/
+	/*flex-direction:column;*/
+	/*justify-content:center;*/
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+	font-size: 1.6rem; /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */
+}
+
+/* *****************************************************************
+GENERALITIES
+### Titres
+- Graisse : normal
+- Interlignage : 1.5em
+- Titre 1 : taille de 3rem, couleur #40CCEA, espacement des mots de 10px, bordure inférieure pointillée de 1px, sur 90% de la largeur
+- Titre 2 : taille de 1.6rem
+- Titre 3 : taille de 1.4rem
+
+***************************************************************** */
+
+/* Le corps du document */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+}
+
+/* Le titre principal d'un flux */
+h1 {
+	font-size: 3rem;
+	color: #40CCEA;
+	word-spacing:10px;
+	border-bottom:1px dotted #40CCEA;
+	width:90%;
+	align-self:center;
+	text-align:center;
+}
+
+/*h1::after {*/
+    /*border:1px dashed #40CCEA;*/
+/*    display: block;*/
+/*    height: 2px;*/
+/*    background-color: #40CCEA;*/
+/*    width: 100px;*/
+/*    content: "";*/
+/*    margin: 10px auto 0 auto;*/
+/*}*/
+
+/* Le titre de second niveau  */
+h2 {
+	font-size: 1.6rem;
+	color: #333;
+}
+
+
+/* Le titre de troisème niveau */
+h3 {
+	font-size: 1.4rem;
+}
+/****************************************************************** */
+/*### Main*/
+/*- Hyperliens : couleur #0096D0 et pas de soulignement*/
+/*- Définir 3 sections avec une ancre vers chacune dans la navigation ; mettre une marge de 30px en haut et en bas de chaque section*/
+/****************************************************************** */
+/* Les liens */
+a {
+	text-decoration: none;
+	color: #0096D0;
+}
+
+/* Ajout d'un élément de décoration au survol */
+a:hover {
+	text-decoration: none;
+	color: #0096D0;
+}
+
+a[href^='mailto']::before {
+    content: '📧';
+}
+
+a[href^='tel']::before {
+    content: '📞 ';
+}
+
+/* Contenu principal */
+main {
+	padding: 2em;
+}
+
+/* Les articles */
+article {
+	background-color: #fff;
+	padding: 1em;
+}
+
+button {
+    background-color:#0069d9;
+    border: none;
+    border-radius:5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+section{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+/* *****************************************************************
+CONTAINER
+### Classe container
+- Largeur : 90%;
+- Largeur maximum : 900px;
+- Centrer sur la page
+
+***************************************************************** */
+
+/* Le container permet de limiter la largeur d'un contenu */
+#container {
+	max-width: 900px; /* On donne une largeur au container */
+	margin-left: auto; /* On centre son contenu */
+	margin-right: auto;
+	width:90%;
+	align-items:center;
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+}
+
+#carnet {
+    width:100%;
+    /*margin-left*/
+}
+
+.vienne h1, h2, p{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* *****************************************************************
+MAIN LAYOUT
+***************************************************************** */
+
+/* L'entête de la page */
+/*### header*/
+/*- Alignement du texte : centré*/
+/*- Ajouter un hyperlien index.html sur le logo*/
+/*- Couleur de fond de la navigation : #40CCEA*/
+/*- Couleur des ancres vers les sections : blanc*/
+/*- Espacer les hyperliens*/
+
+header {
+	padding: 1em;
+	text-align: center;
+	color: #999;
+	/*background-image:;*/
+	/*background-color: #40CCEA;*/
+}
+
+/* Pas de marge pour le titre pricipal */
+/*header h1 {*/
+/*	margin: 0;*/
+/*}*/
+
+.logo img{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    align-self:center;
+    /*background-image:url("ressources/logo.png");*/
+}
+
+.menu ul li{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    align-items:center;
+    color:#fff;
+}
+
+nav ul{
+    background-color:#40CCEA;
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    color:#fff;
+    height:40px;
+    margin:0;
+    padding:0;
+}
+
+nav li{
+    /*list-style:none;*/
+    display:flex;
+    justify-content:space-between;
+    /*flex-wrap:nowrap;*/
+    padding:0;
+    margin-bottom:0 140px;
+    width:100%;
+}
+/* Le pied de page */
+footer {
+	padding: 2em;
+	text-align: center;
+	color: #fff;
+	background-color: #40CCEA;
+}
+
+footer .img{
+    width:60px;
+}
+
+/* *****************************************************************
+SECTION MES DERNIERS VOYAGES
+***************************************************************** */
+/*### Section "Mes derniers voyages"*/
+/*- Utilisation du float pour placer l'image à gauche ou à droite*/
+/*- Utiliser une classe readmore sur les liens "en savoir plus"*/
+/*- Ajouter une ligne horizontale entre les 2 articles*/
+/*- Texte en rouge : #F00*/
+/*- Texte en ocre : #CD8C56*/
+/*- Liens "En savoir plus" : couleur de fond #0096D0, bord arrondi de 6px + un certain padding*/
+/*- Appliquer une marge inférieure de 25px sur les articles*/
+/*- Largeur maximum des images : 49%*/
+
+.rouge{
+    color:#F00;
+}
+
+.jaune{
+    color:#CD8C56;
+}
+
+.droite {
+	float: right;
+}
+
+.gauche {
+	float: left;
+}
+
+/* *****************************************************************
+SECTION A PROPOS
+***************************************************************** */
+/*### Section "À propos"*/
+/*- Appliquer l'image du fond, centrée et s'étirant sur la section*/
+/*- Jouer avec le padding et le margin pour positionner l'article comme sur la maquette*/
+/*- La largeur de l'article est de 50%, y compris le padding de 2% appliqué*/
+#apropos{
+    background-image: url("ressources/miami-beach.jpg");
+    background-repeat-x: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:450px;
+}
+
+.articleApropos{
+    background-color:white;
+    width:300px;
+    height:300px;
+    text-align: center;
+    /*font-size: 31px;*/
+    color: black;
+    /*background-size: cover;*/
+    /*border-radius: 15px;*/
+    /*width: 701px;*/
+    /*height: 100%;*/
+    margin-top: 72px;
+}
+
+
+/* *****************************************************************
+ADRESSE ME CONTACTER
+***************************************************************** */
+/*### Section "Me contacter"*/
+/*- Couleurs des icônes des réseaux sociaux : #4267B2, #1da1f2, #bd081c, #8948C1*/
+
+
+
+/* *****************************************************************
+DIVERS
+***************************************************************** */

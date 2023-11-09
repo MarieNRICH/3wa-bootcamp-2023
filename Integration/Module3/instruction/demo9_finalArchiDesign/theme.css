@@ -1,0 +1,265 @@
+/*COULEURS*/
+/*- fond turquoise : #00748D*/
+/*- jaune orangé : #CB8606*/
+/*- fond gris clair: #f9f9f9*/
+/*- texte : #414141*/
+
+/*POLICES*/
+/*- Par défaut : Nunito (Google fonts)*/
+/*- Titres et nav : Fjalla One (Google fonts)*/
+
+/*TAILLE DES POLICES*/
+/*- par défaut : 18px*/
+/*- titre du site : 20px*/
+/*- menu : 20px*/
+/*- titre de la page d'accueil : 30px et 20px*/
+/*- titre des pages intérieures : 30px*/
+/*- sous-titres : 25px*/
+/*- titres articles : 20px*/
+/*- textes colonne de droite : 16px*/
+/*- auteurs : 14px*/
+
+/*Les pictos des réseaux sociaux sont des Font Awesome*/
+/***********************************************************************************************************************************/
+
+* {
+    font-family: 'Nunito', sans-serif;
+    color:#414141;
+    font-size:18px;
+    /*text-align:center;*/
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url(static/Nunito-black.ttf);
+	/*font-weight: 400;*/
+	font-style: normal;
+}
+
+h1{
+    font-family:"Fjalla One";
+    font-size: 30px;
+    background-color:white;
+}
+
+h2{
+    font-size:20px;
+    text-align:center;
+}
+
+p {
+    font-size:18px;
+    text-align:center;
+}
+/*================================================*/
+/**************** HEADER *************************/
+/*================================================*/
+
+header {
+	padding: 1em;
+	/*text-align: left;*/
+	/*background-color: #00748D;*/
+	display:flex;
+	/*justify-content : space-between;*/
+	/*.test-align-content-around {*/
+	/*display: grid;*/
+	/*grid-template: repeat(3, auto) / repeat(4, auto);*/
+	/*align-content: space-around;*/
+	/*height: 50vh;*/
+}
+
+/*.test-items {*/
+/*	display: grid;*/
+/*	grid-template: repeat(3, auto) / repeat(4, auto);*/
+/*	gap: 1em;*/
+/*}*/
+/*.test-items #area-header {*/
+/*	grid-row-start: 1;*/
+/*	grid-row-end: 2;*/
+/*	grid-column-start: 1;*/
+/*	grid-column-end: 5;*/
+/*}*/
+
+.path{
+    background : url('images/path.png') repeat-x 0 bottom #00748D;
+}
+
+.home{
+    width:100%;
+    /*height:200px;*/
+    display:flex;
+    padding-bottom:25px
+    list-style:none;
+    text-decoration:none;
+    /*color:white;*/
+    /*justify-content:space-between;*/
+}
+
+/* Pas de marge pour le titre pricipal */
+header p {
+	margin: 0;
+}
+
+ul{
+    list-style : none;
+    text-decoration:none;
+    margin:16px 0 0 1033px;
+    padding:5px;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    width: 39%;
+    background-color: transparent;
+}
+
+a{
+    margin:10px;
+    padding:10px;
+    color:white;
+    /*transition:background-color 1s;*/
+}
+
+ul>li>a:hover{
+    background-color: white;
+    color:#00748d;
+    text-decoration:none;
+    transition: background-color 1s;
+}
+
+
+/*================================================*/
+/**************** MAIN *****************************/
+/*================================================*/
+.main{
+    background-image: url('images/bg-header.jpg');
+    height:450px;
+}
+
+.main>h2>p{
+    grid-area: main;
+    background-color: #CB8606;
+    color: #FFF;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    padding: 8px;
+    width: 350px;
+    text-align: center;
+    margin: auto;
+    border-radius: 8px;
+}
+/*================================================*/
+/**************** SECTION *************************/
+/*================================================*/
+
+/* gap */
+.test-gap {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	row-gap: 2em;
+	column-gap: 4px;
+}
+
+/*================================================*/
+/**************** ARTICLES ************************/
+/*================================================*/
+
+::before h3{
+    content:url("")
+}
+
+.prestationsLogo{
+    display:grid;
+    grid-template:auto;
+}
+
+/*img .partner1, .partner2, .partner3, .partner4*/
+
+article {
+    display:grid;
+    width:auto;
+    justify-content:around;
+    height:280px;
+    padding:4px;
+    border:1px solid #00748D;
+}
+
+.cards>i {
+    background-color: #CB8606;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    align-items:center;
+}
+
+.presta5{
+    background-image:url("images/partner1.png");
+}
+.presta6{
+    background-image:url("images/partner2.png");
+} 
+.presta7{
+    background-image:url("images/partner3.png");
+} 
+.presta8{
+    background-image:url("images/partner4.png");
+}
+
+/*================================================*/
+/**************** FOOTER *************************/
+/*================================================*/
+
+.grid{
+    padding: 1em;
+	text-align: center;
+	color: #999;
+	background-color: #00748D;
+	display:flex;
+	justify-content:space-evenly;
+}
+
+footer p{
+    color:#fff;
+}
+
+
+/* *****************************************************************
+ VERSION TABLETTE
+***************************************************************** */
+
+@media screen and (max-width: 1100px) {
+	main {
+		flex-wrap: wrap;
+	}
+	article {
+		width: 50%;
+	}
+}
+
+
+/**/
+/*Intégration responsive en retrofitting / desktop first*/
+/*Le contenu a un maximum de 1500px de large mais les fonds de couleur de l'entête et du pied de pge font toute la largeur de la fenêtre du navigateur quelque soit sa taille.*/
+/*Les points de rupture :*/
+/*- 1100px pour tablette*/
+/*- 780px pour mobile*/
+/*- petits mobiles 630px*/
+
+/* *****************************************************************
+ VERSION MOBILE
+***************************************************************** */
+
+@media screen and (max-width: 780px) {
+	article {
+		width: 100%;
+	}
+}
+
+/* *****************************************************************
+ VERSION PETITS MOBILES
+***************************************************************** */
+
+@media screen and (max-width: 630px) {
+	article {
+		width: 100%;
+	}
+}

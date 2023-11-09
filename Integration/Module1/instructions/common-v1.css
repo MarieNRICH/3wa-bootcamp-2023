@@ -1,0 +1,339 @@
+/*:root {*/
+    /*--container-padding: 80px;
+    --container-width: calc(100% - var(--container-padding) * 2);*/
+/*    --lightblue: #BDECF6;*/
+/*    --lightgray: #ECECEC;*/
+/*    --gray: #747474;*/
+/*    --font: #444444;*/
+/*    --footer: #444444;*/
+/*    --framboise: #E83B89;*/
+/*    --white: #FFFFFF;*/
+/*}*/
+
+/*Global*/
+
+/** Police: Monaco, monospace*/
+/** Taille: 14px*/
+/** Couleur: #000*/
+/** Couleur du fond: #fff*/
+
+@font-face {
+    font-family: Muli-Bold;
+    /*src: local("Muli","Muli-Regular"),*/
+    src: url("Muli/Muli-Bold.ttf");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Muli-BoldItalic;
+    src:url("Muli/Muli-BoldItalic.ttf");
+} 
+
+@font-face{
+    font-family:Muli-Italic;
+    src: url("Muli/Muli-Italic.ttf")
+}
+
+@font-face{
+    font-family:Muli-Regular;
+    src:url("Muli/Muli-Regular.ttf")
+}
+
+@font-face{
+    font-family:Courgette-Regular;
+    src:url("ressources/Courgette-Regular.ttf");
+    
+}
+
+
+* {
+    /*margin:10px;*/
+    /*border: 1px solid rgba(0,0,0,0.2); */
+    /*align-items:center;*/
+    /*display:flex;*/
+    /*justify-content:center;*/
+    /*flex-direction:column;*/
+    /*width:90%;*/
+    font-family:sans-serif;
+    font-size:14px;
+    color:#111;
+    line-height:2;
+    /*background:rgba(0,0,0,0.1);*/
+    /*background:#ccc;*/
+}
+
+body {
+    font-family : sans-serif;
+    color: #ccc;
+    background : #ccc;
+    align-items:left;
+    width:980px;
+    /*background:rgba(0,0,0,0.1);*/
+}
+
+header {
+    background:rgba(0,0,0,0.2);
+    border: 1px solid  #ff1a1a; 
+    /*width:90%;*/
+    align-items:center;
+    text-align:center;
+}
+
+main {
+    text-align:left;
+    /*align-content:center;*/
+    /*align-items:center;*/
+}
+
+footer{
+    background:rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0,0.2); 
+    /*width:90%;*/
+    align-items:center;
+    text-align:center;
+}
+
+h1 {
+    color:red;
+    font-weight:bold;
+    font-size:40px;
+    font-family:'barriecito';
+}
+
+h2, h3{
+    font-weight:bold;
+    font-size:20px;
+    font-family:'barriecito';
+}
+
+a{
+    color:red;
+    text-decoration:none;
+}
+b{
+    font-weight:700;
+}
+
+i{
+    font-size:40px;
+}
+
+img {
+    width:50px;
+    margin-top:10px;
+}
+
+span {
+    color:deepskyblue;
+}
+
+.parent{
+    /*border-style: dotted;*/
+    border: 1px dotted #ff1a1a  ; 
+    width:100%;
+}
+
+/**********EXO6 - MISE EN FORME**********/
+
+.item1 {
+    font-size:medium;
+}
+
+.item2{
+    font-size:large;
+}
+
+.item3{
+    font-size:14px;
+}
+.item4{
+    font-size:14pt;
+}
+.item5{
+    font-size:150%;
+}
+.item6{
+    font-size:1.5em;
+}
+.item7 {
+    font-size:1.5rem;
+}
+
+.fontWeight1{
+    font-weight: bold;
+}
+.fontWeight2{
+    font-weight: normal;
+}
+.fontWeight3{
+    font-weight: 700;
+}
+.fontWeight4{
+    font-weight: bolder;
+}
+.fontWeight5{
+    font-weight: lighter;
+}
+.fontStyle1{
+    font-style:italic;
+}
+.fontStyle2{
+    font-style:normal;
+}
+.lineHeight1{
+    line-height: 1;
+}
+.lineHeight2{
+    line-height: 1.5;
+}
+.lineHeight3{
+    line-height: 4;
+}
+.letterSpacing{
+    letter-spacing: 0.5em;
+}
+.wordSpace{
+    word-spacing: 2em;
+}
+p .whiteSpace1{
+    white-space:normal;
+    background:#ccc;
+    width:200px;
+    
+}
+p .whiteSpace2{
+    white-space:nowrap;
+}
+p .whiteSpace3{
+    white-space:pre;
+}
+
+.textAlignCenter{
+    text-align: center;
+}
+
+.textAlignCenterJ{
+    text-align: center;
+    text-justify: left;
+}
+.textAlignJutify{
+    text-align:justify;
+    text-justify:inter-word;
+}
+
+.textTransform1{
+    text-transform:none;
+}
+.textTransform2{
+    text-transform:Capitalize;
+}
+.textTransform3{
+    text-transform:uppercase;
+}
+
+.textTransform4{
+    text-transform:none;
+}
+
+.textDecoration1{
+    text-decoration:underline;    
+}
+.textDecoration2{
+    text-decoration:underline none;    
+}
+.textDecoration3{
+    text-decoration:overline;    
+}
+.textDecoration4{
+    text-decoration:underline red;    
+}
+.textDecoration5{
+    text-decoration:underline double orangered;    
+}
+.textDecoration6{
+    text-decoration:underline green;    
+}
+.textDecoration7{
+    text-decoration:underline wavy teal;    
+}
+
+
+/**********EXO7 - CHAT**********/
+
+#main{
+    max-width:960px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+    padding : 25 50px 20px 25;
+}
+
+.container{
+    align-content:center;
+    align-items:center;
+}
+.chat1 img{
+  float: left;
+  width: 40.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+  padding: 0 8px 8px 0; /* if you want space between the images */
+}
+
+.chat2 img{
+  float: right;
+  width: 36.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+  padding: 0 8px 8px 0; /* if you want space between the images */
+}
+
+
+/**********NEW YORK**********/
+
+
+#main{
+    max-width:960px;
+    padding: 24px 50px 50px 60px;
+    border-style:none;
+}
+
+#newYorkBody{
+    max-width:980px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    font-family:Courgette-Regular;
+    color:#444;
+    font-size:18px;
+    background-color:transparent;
+}
+
+h2 #newYorkBody{
+    font-size:35px;
+}
+
+h3 #newYorkBody{
+    font-size:25px;
+}
+
+#newYorkCityHeader {
+    color:#003884;
+    text-decoration:center;
+    font-size:40px;
+}
+
+h1 #newYorkCityHeader{
+    font-size:40px;
+}
+
+.blockquote #newYorkBody {
+    font-size:25px;
+}
+
+#newYorkFooter{
+    background-color:transparent;
+    border-style:none;
+}
+
+/**********rwd**********/
+

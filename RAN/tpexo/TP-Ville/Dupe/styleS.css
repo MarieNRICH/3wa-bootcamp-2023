@@ -1,0 +1,645 @@
+*, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #333;
+	background: #fff url(images/bg.jpg) repeat-x;
+	font-family: "Trebuchet MS", arial, Verdana, Sans-Serif;
+	font-size: 85%;
+	text-align: center;
+}
+
+img, fieldset {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	color: #7c8939;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*************** Style des formulaires ****************/
+label em {
+	color: #b03a31;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#blocContent fieldset {
+	border: none;
+	overflow: hidden;
+	margin-bottom: 20px;
+	padding: 15px;
+	background: #ebebeb;
+}
+
+label {
+	font-size: 12px;
+}
+
+.boutonNL {
+	background: none;
+	color: #ff6633;
+	border: none;
+	border: 1px solid #ff6633;
+	cursor: pointer;
+	margin: 0 0 0 20px;
+	top: 0;
+}
+
+#blocContent label {
+	display: block;
+	width: 50%;
+	float: left;
+}
+
+#blocContent fieldset p {
+	background: url(images/separatorForm.gif) repeat-x 0 100%;
+	clear: both;
+	overflow: hidden; 
+	width: 100%;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+#blocContent fieldset div p, #blocContent fieldset p#erreur, #blocContent fieldset p.bouton {
+	background: none;
+	padding-bottom: 6px;
+	margin-bottom: 10px;
+	width: auto;
+}
+
+#blocContent fieldset p.bouton input {
+	cursor: pointer;
+}
+
+#page #blocContent fieldset p#erreur {
+	color: #b03a31;
+	font-weight: bold;
+}
+
+#page #blocContent .ressaisir fieldset p#erreur {
+	border: 1px solid #b03a31;
+	background: #fae7e5;
+	padding: 10px;
+}
+
+textarea {
+	width: 395px;
+	height: 80px;
+}
+
+input {
+	border: 1px solid #cccccc;
+	width: 176px;
+	font-size: 12px;
+	color: #666666;
+}
+
+input.boutonSubmit {
+	width: auto;
+	border: none;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+#blocContent #formActes p label, #blocContent #formActes2 p label {
+	margin-right: 6px;
+	float: none;
+	display: inline;
+}
+
+#blocContent #formActes p label input, #blocContent #formActes2 p label input {
+	width: auto;
+}
+
+#blocContent #formActes label, #blocContent #formActes2 label {
+	float: none;
+	width: auto;
+	display: block;
+}
+
+#page {
+	width: 940px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#header {
+	height: 100px;
+	position: relative;
+}
+
+#header h1 {
+	position: absolute;
+	left: 18px;
+	top: 19px;
+}
+
+#header h1 a {
+	display: block;
+	width: 392px;
+	height: 74px;
+	background: url(images/logo.jpg) no-repeat;
+	text-indent: -600em;
+}
+
+#header #menuTop {
+	position: absolute;
+	left: 315px;
+	top: 0;
+}
+
+#header #menuTop ul {
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+}
+
+#header #menuTop ul li {
+	float: left;
+	line-height: 41px;
+	height: 41px;
+	background: url(images/separatorTop.gif) no-repeat 100% 0;
+	margin-right: 15px;
+}
+
+#header #menuTop ul li a {
+	display: block;
+	margin-right: 15px;
+	font-size: 12px;
+}
+
+#header form {
+	width: 220px;
+	position: absolute;
+	right: 0;
+	top: 12px;
+}
+
+#flash  {
+	height: 220px;
+	background: url(images/flash.jpg) no-repeat;
+	position: relative;
+}
+
+#dateJour {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 70px;
+	height: 81px;
+	background: url(images/fondDate.gif) repeat-x;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+}
+
+#dateJour span {
+	display: block;
+}
+
+#dateJour #jour {
+	font-size: 34px;
+	line-height: 30px;
+}
+
+#dateJour #annee {
+	font-size: 20px;
+}
+
+#menu {
+	height: 35px;
+	position: relative;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu ul li {
+	float: left;
+	line-height: 35px;
+	height: 35px;
+	background: url(images/separatorMenu.gif) no-repeat 100% 0;
+	margin-right: 12px;
+	position: relative;
+}
+
+#menu ul li.lastLink {
+	background: none;
+}
+
+#menu ul li a {
+	display: block;
+	margin-right: 12px;
+	font-size: 14px;
+	color: #666666;
+}
+
+/* Ul du 2eme niveau */
+#menu ul ul {
+	display: none;
+}
+
+#menu ul li.sfhover, #menu ul li:hover {
+	z-index: 15;
+}
+
+#menu ul li.sfhover ul li.sfhover, #menu ul li:hover ul li:hover {
+	z-index: 20;
+}
+
+#menu ul li.sfhover ul, #menu ul li:hover ul {
+	display: block;
+	position: absolute;
+	left: -10px;
+	top: 30px;
+	width: 200px;
+	text-align: left;
+	padding: 5px 0;
+	z-index: 4;
+	border: 1px solid #ccc;
+	background: #fff url(images/fondMenu.gif) repeat-x;
+}
+
+#menu ul li.sfhover ul li ul, #menu ul li:hover ul li ul {
+	display: none;
+}
+
+#menu ul li.sfhover ul li.sfhover ul, #menu ul li:hover ul li:hover ul {
+	display: block;
+	top: 5px;
+	left: 150px;
+}
+
+#menu ul ul li {
+	line-height: 18px;
+	height: auto;
+	float: left;
+	width: 200px;
+	background: none;
+}
+
+#menu ul ul li a {
+	margin: 0 10px;
+	border-bottom: 1px solid #ccc;
+	display: block;
+	width: 180px;
+	padding: 0;
+	background: none;
+	font-size: 13px;
+}
+
+#menu ul ul li a:hover {
+	background: #f0efef;
+	text-decoration: none;
+}
+
+#menu ul li.sfhover ul li.sfhover ul li ul, #menu ul li:hover ul li:hover ul li ul {
+	display: none;
+}
+
+#menu ul li.sfhover ul li.sfhover ul li.sfhover ul, #menu ul li:hover ul li:hover ul li:hover ul {
+	display: block;
+}
+
+#blocContent {
+	overflow: hidden;
+	width: 100%;
+	margin-top: 10px;
+}
+
+#blocContent a {
+	text-decoration: underline;
+}
+
+#blocContent a:hover {
+	text-decoration: none;
+}
+
+#blocContent .separator {
+	border-top: 1px solid #ececec;
+	margin: 10px 0;
+}
+
+#blocContent .separator hr {
+	display: none;
+}
+
+.bloc {
+	float: left;
+}
+
+#blocInside {
+	width: 575px;
+	margin-top: 30px;
+}
+
+#blocInside h2 {
+	color: #989933;
+	font-size: 24px;
+	font-weight: normal;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ececec;
+	padding-bottom: 15px;
+}
+
+#blocInside p, #blocInside ul, #blocInside ol, #blocInside td  {
+	margin-bottom: 15px;
+	font-size: 13px;
+}
+
+#blocInside blockquote p {
+	font-size: 22px;
+	color: #8ba705;
+}
+
+#blocInside ul {
+	list-style: inside square;
+}
+
+#blocInside ol {
+	list-style: inside decimal;
+}
+
+#blocInside ul ul, #blocInside ul ol, #blocInside ol ul, #blocInside ol ol {
+	margin-left: 15px;
+}
+
+#blocInfos {
+	float: right;
+	width: 335px;
+}
+
+#blocInfos h2 {
+	color: #989933;
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+#blocInfos p, #blocInfos ul, #blocInfos ol {
+	font-size: 13px;
+}
+
+#blocInfos p.all {
+	text-align: right;
+}
+
+#blocInfos ul {
+	list-style: none;
+}
+
+#blocInfos ol {
+	list-style: inside decimal;
+}
+
+#blocNews, #blocSondage, #blocPratique, #acte {
+	background: url(images/fondBlocInfos.gif) no-repeat;
+	padding: 32px 20px 18px 30px;
+}
+
+#blocNews h3 {
+	font-weight: normal;
+	font-size: 13px;
+}
+
+#blocSondage h3 {
+	font-size: 13px;
+}
+
+#blocPratique, #acte {
+	margin-bottom: 20px;
+}
+
+#blocPratique p.all {
+	margin-top: 10px;
+}
+
+#blocAnnonceur p {
+	background: url(images/cadre.jpg) no-repeat;
+	padding: 0 3px 8px 1px;
+	margin-bottom: 15px;
+}
+
+#blocAnnonceur img {
+	display: block;
+}
+
+#footer {
+	background: #788b1f url(images/bgFooter.jpg) repeat-x 0 100%;
+}
+
+#contentFooter {
+	width: 940px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 30px 0 10px 0;
+}
+
+#contentFooter p, #contentFooter ul {
+	font-size: 12px;
+}
+
+#contentFooter ul {
+	list-style: none;
+}
+
+#contentFooter a, #contentFooter h2 {
+	color: #d9ef70;
+}
+
+#contentFooter h2 {
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+
+#blocInfoPlus {
+	width: 575px;
+}
+
+#menuFooter {
+	margin: 10px 0;
+}
+
+#menuFooter ul li {
+	display: inline;
+	background: url(images/separatorFooter.gif) no-repeat 100% 50%;
+	padding-right: 10px;
+	margin-right: 6px;
+}
+
+#menuFooter ul li.lastLink {
+	background: none;
+}
+
+#blocLiensUtiles {
+	float: right;
+	width: 335px;
+	padding-bottom: 30px;
+}
+
+#blocLiensUtiles ul {
+	margin-top: 10px;
+}
+
+#footer #contentFooter #copyright {
+	clear: both;
+	font-size: 11px;
+}
+
+#copyright a#linkPptOnline {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+#plansite {
+	margin: 20px 0 50px 0;
+}
+
+#plansite a {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+}
+
+#plansite a:hover {
+	text-decoration: underline;
+}
+
+#blocInside #plansite h3 {
+	font-weight: normal;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #ececec;
+	padding-bottom: 8px;
+}
+
+#blocInside #plansite h3 a {
+	background: url(images/puce.gif) no-repeat 0 8px;
+	padding-left: 10px;
+}
+
+#blocInside #plansite h4, #blocInside #plansite h5, #blocInside #plansite h6 {
+	margin: 0 0 5px 0;
+}
+
+#blocInside #plansite .bloch4 {
+	margin: 0 0 20px 30px;
+}
+
+#blocInside #plansite h4 a {
+	padding-left: 12px;
+	background: url(images/puce2.gif) no-repeat 0 6px;
+}
+
+#blocInside #plansite h4 a:hover {
+	text-decoration: none;
+	color: #95a446;
+}
+
+#blocInside #plansite .bloch5 {
+	margin: 0 0 10px 30px;
+}
+
+#blocInside #plansite h5 {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#blocInside #plansite h5 a {
+	background: url(images/puceFlecheGrise.gif) no-repeat 0 6px;
+	padding-left: 10px;
+}
+
+#blocInside .news p, #blocInside .sondage p  {
+	margin: 0;
+}
+
+#blocInside .news, #blocInside .sondage {
+	border-bottom: 1px solid #ececec;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.vig {
+	background: url(images/cadre.gif) no-repeat 100% 100%;
+	padding: 0 2px 2px 0;
+	float: left;
+}
+
+.vig img {
+	width: 170px;
+	height: 170px;
+}
+
+.detailNews {
+	float: left;
+	width: 300px;
+	margin-left: 10px;
+}
+
+#resultatRecherche {
+	border-bottom: 1px solid #ececec;
+	padding-bottom: 15px;
+}
+
+.separateur {
+	height: 1px;
+	border-bottom: 1px solid #ececec;
+	margin: 10px 0;
+}
+
+.separateur hr {
+	display: none;
+}
+
+#page #blocVideo {
+	position: absolute;
+	border: 1px solid #ccc;
+	background: #ffffff;
+	z-index: 55;
+	padding-bottom: 10px;
+	padding: 10px 0;
+	width: 354px;
+	left: 100px;
+	cursor: move;
+}
+
+html>body #blocVideo {  
+	margin-top: 90px;
+}
+
+#blocVideo p {
+	text-align: center;
+	margin-top: 350px;
+}
+
+#blocVideo a {
+	background: url(images/boutonClose.jpg) no-repeat;
+	padding: 3px 0 4px 22px;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+#player {
+	position: absolute;
+	top: 5px;
+	left: 2px;
+	cursor: move;
+	z-index: 150;
+	cursor: move;
+}

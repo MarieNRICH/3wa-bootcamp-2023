@@ -1,0 +1,95 @@
+@import 'header';
+@import 'footer';
+@import 'rwd';
+@import 'main';
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu,, section
+nav {
+	display: block;
+	// max-width:1400px;
+	// display:flex;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* *****************************************************************
+GENERAL
+***************************************************************** */
+
+body * {
+	box-sizing: border-box;
+    // height: 100vh;
+    // overflow: auto;
+    // scroll-snap-type: y mandatory;
+}
+
+html {
+	font-size: 62.5%;  
+}
+
+img {
+	max-width: 100%;
+	width: auto; /* pour ie */
+	height: auto;
+	-ms-interpolation-mode: bicubic; /* lissage pour IE */
+	image-rendering: -webkit-optimize-contrast; /* lissage pour Chrome au redimensionnement*/
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	line-height: 1.5;
+	font-size: 1.8rem; 
+	background-color: #ededed;
+}
+
+h1, 
+h2, 
+h3, 
+h4 {
+	font-family: 'Merienda', cursive;
+	font-weight: bold;
+} 
+
+h1 {
+	font-size: 3rem;
+	margin: 3rem 0;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin: 4rem 0 2rem 0;
+	text-align: center;
+}
+
+p {
+	margin-bottom: 1.5rem;
+}

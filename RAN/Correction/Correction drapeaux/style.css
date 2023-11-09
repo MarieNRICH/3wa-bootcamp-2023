@@ -1,0 +1,253 @@
+body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flagV,
+.flagH,
+.flagCross {
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+.flagH,
+.flagV {
+    display: flex;
+}
+
+.flagH {
+    flex-direction: column;
+}
+
+
+/****Flag 1****/
+
+.flag1 .f1 {
+    background-color: blue;
+    width: 33.33%;
+    flex-direction: row;
+}
+
+.flag1 .f2 {
+    background-color: white;
+    width: 33.33%;
+}
+
+.flag1 .f3 {
+    background-color: red;
+    width: 33.33%;
+}
+
+
+/****Flag 2****/
+
+.flag2 .f1 {
+    background-color: black;
+    height: 33.33%;
+}
+
+.flag2 .f2 {
+    background-color: red;
+    height: 33.33%;
+}
+
+.flag2 .f3 {
+    background-color: yellow;
+    height: 33.33%;
+}
+
+
+/****Flag 3****/
+
+.flagCross {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.flag3 .f1 {
+    display: flex;
+    justify-content: space-between;
+    height: 40%;
+    width: 100%;
+}
+
+.flag3 .f1 .c1 {
+    background-color: white;
+    width: 40%;
+}
+
+.flag3 .f1 .c2 {
+    background-color: white;
+    width: 40%;
+}
+
+.flag3 .f2 {
+    background-color: red;
+    height: 20%;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.flag3 .f3 {
+    display: flex;
+    justify-content: space-between;
+    height: 40%;
+    width: 100%;
+}
+
+.flag3 .f3 .c1 {
+    background-color: white;
+    width: 40%;
+}
+
+.flag3 .f3 .c2 {
+    background-color: white;
+    width: 40%;
+}
+
+
+/****Flag 4****/
+
+.flag4 .f1 {
+    background-color: green;
+    width: 33.33%;
+    flex-direction: row;
+}
+
+.flag4 .f2 {
+    background-color: yellow;
+    width: 33.33%;
+}
+
+.flag4 .f3 {
+    background-color: red;
+    width: 33.33%;
+}
+
+.flag4 img {
+    width: 120px;
+    display: block;
+    margin: auto;
+    margin-top: 85px;
+}
+
+
+/****Flag 5****/
+
+.flag5 .f1 {
+    background-color: red;
+    height: 25%;
+    width: 100%;
+}
+
+.flag5 .f2 {
+    background-color: blue;
+    height: 50%;
+    width: 100%;
+}
+
+.flag5 .f3 {
+    background-color: red;
+    height: 25%;
+    width: 100%;
+}
+
+.whiteCircle {
+    display: block;
+    margin: auto;
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    background-color: white;
+    margin-top: 13px;
+}
+
+
+/****Flag 6****/
+
+.upFlag {
+    display: flex;
+}
+
+.square {
+    float: left;
+    width: 35%;
+}
+
+.upRight {
+    height: 134px;
+    width: 65%;
+}
+
+.line1,
+.line2,
+.line3 {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.line1 {
+    margin-top: 5px;
+}
+
+.hermine {
+    width: 40px;
+}
+
+.flag6 .f1 {
+    background-color: black;
+    height: 25%;
+    width: 100%;
+}
+
+.flag6 .f2 {
+    background-color: white;
+    height: 25%;
+    width: 100%;
+}
+
+.flag6 .f3 {
+    background-color: black;
+    height: 25%;
+    width: 100%;
+}
+
+.flag6 .f4 {
+    background-color: white;
+    height: 25%;
+    width: 100%;
+}
+
+.flag6 .f5 {
+    background-color: black;
+    height: 11.11%;
+    width: 100%;
+}
+
+.flag6 .f6 {
+    background-color: white;
+    height: 11.11%;
+    width: 100%;
+}
+
+.flag6 .f7 {
+    background-color: black;
+    height: 11.11%;
+    width: 100%;
+}
+
+.flag6 .f8 {
+    background-color: white;
+    height: 11.11%;
+    width: 100%;
+}
+
+.flag6 .f9 {
+    background-color: black;
+    height: 11.11%;
+    width: 100%;
+}

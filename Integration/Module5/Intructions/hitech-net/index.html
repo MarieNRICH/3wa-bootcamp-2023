@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="highTeck.net maquette en SASS - Module5">
+    <title>highTeck.net</title>
+    <link rel="icon" href="ressources/images/logo.svg">
+	<link href="https://fonts.googleapis.com/css?family=Athiti:500|Merienda:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/brands.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/solid.min.css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="script.js" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav class="nav-wrap">
+                <ul class="nav-ul">
+                    <a href="#"><li class="item1">Options d'affichage / accessibilité</li></a>
+                    <a href="#"><li class="item2">Thème : <span>sombre contrasté clair</span></li></a>
+                    <a href="#"><li class="item3">Interlignage : <span>simple augmenté</span></li></a>
+                </ul>
+            </nav>
+         </div>  
+        <div class="bar-logo">
+        <div class="logo-hitech">
+            <a href="index.html"><img src="ressources/images/logo.svg" alt="highTeck.net logo" class="logo" width=20 height=20>
+            <strong>HiTech.NET</strong>
+            <p>Tout le matériel High-Tech</p>
+            </a>
+        </div>
+        <div class="search-bar">
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="my-acompt">
+            
+        </div>
+        <div class="my-basket">
+            
+        </div>
+        </div>
+          
+    </header>
+    
+    <main class="container">
+    
+    <!--div.menu>(a>li.menu$)*4-->
+    <div class="listesDeroulante">
+            <div class="produits">
+                <select id="legume-select">
+                            <option selected>Choisir un produit</option>
+                        <optgroup label="Légumes">
+                            <option>Haricots verts</option>
+                            <option>Petits pois</option>
+                            <option>Radis</option>
+                            <option>Salade</option>
+                            <option>Oignons</option>
+                            <option>Choux</option>
+                            <option>Courgette</option>
+                        </optgroup>
+                        <optgroup label="Fruits">
+                            <option>Banane</option>
+                            <option>Fraise</option>
+                            <option>Pomme</option>
+                            <option>Poire</option>
+                            <option>Mangue</option>
+                            <option>Orange</option>
+                        </optgroup>
+                    </select>
+            </div>
+
+            <div class="regions">
+                <select class="custom-select">
+                  <option selected>Choisir une région</option>
+                  <option value="1">Pays de la Loire</option>
+                  <option value="2">Bretagne</option>
+                  <option value="3">Aquitaine</option>
+                </select>
+            </div>
+        </div>
+
+    </main>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $('.slider').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+        });
+    });
+
+    </script>
+</body>
+</html>

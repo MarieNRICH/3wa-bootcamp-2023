@@ -1,0 +1,71 @@
+Se déplacer dans votre terminal : 
+
+ls = affichage de la liste de tes dossiers ou fichiers, 
+cd = permet de se déplacer ds les dossiers et fichiers, 
+pwd = lister le chemin, 
+
+Déposer son repository : 
+
+git clone https://github.com/MarieNRICH/test-github.git
+
+clone le repository dans le dossier de ton terminal dans lequel tu souhaite l'enregistrer.
+
+entrez :
+=> ls pour afficher tout tes dossiers et vérifier que votre dossier repo nommé test-github est bien créer,
+
+=> cd pour vous mettre dans votre dossier : cd test-github/ (utilise tabulation pour finir l'écriture du nom de ton dossier)
+
+=> ls -la : permet d'afficher les dossiers git : .git et/ou les dossier cachés
+
+=> git status : permet de vérifier ton statut et la branch dans laquelle tu te trouve ainsi que les erreurs
+
+=> git branch : t'indique dans quelle branch tu te trouves, 
+=> git checkout -b "creation-index" : crée une nouvelle branch, 
+=> git add . ou le mieux est de : git add creation-index, afin d'être sur que tu ajout ton fichier au bon dossier.
+
+n'hésites pas à utiliser git status pour ck tes erreurs ou autre message, 
+
+=> git commit -m "Création du fichier index.html avec le titre h1"
+
+le terminal, te demandera un Username + un passeword :
+
+------
+Push : 
+il est conseil de commit après chq maj validé par toi afin d'éviter de perdre de la donné lors des coupures..
+Et merger uniquement en fin de journée lorsque tout tes push sont bien listé
+------------
+
+très important : faire un git branch sur ton index.html pour être sur que tout est ok, 
+n'hésitez pas à faire un git pull pour récuperer tout le code de la dernière branch..
+
+***
+Pull : 
+git pull creation-index
+là tu peux commencer à coder de nouveau et faire tes maj,
+
+-------
+.gitignore : créer ce fichier afin d'y indiquer les fichiers que tu ne souhaites pas qu'il soit traquer dans le gitHub, ce qui alège ton code dans ton repo.
+
+ex :  ignore le dossier > node_js
+
+à revoir...
+
+********** 06/07/23
+POO : création d'une class dans un fichier js (ex : Eleve.js), avec le mot clé "class" + "nom de votre class" et entre {} vos fonctions . Cela s'appelle une méthode. 
+
+la méthode correspond à une fonction dans une class. elle est appelé pour 
+
+la .class c'est le moule qui permet créer une multitude d'objet.
+
+pour manipuler vos propopriétés, vous aller devoir utiliser le mot clé : this.
+
+class Eleve {
+	constructor(paramNomVille, paramDepartement){
+	
+	}
+}
+
+pour instantiation d'un eleve :
+
+let eleve1 = new Eleve('','','','',[])
+

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tester les principales propriétés de Flexbox">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/ressources/favicon.ico">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Carnets de voyages</title> 
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="ressources/logo.png" alt="logo" class="logo"></a>
+         <nav class="menu">
+            <ul>
+                <li><a href="#carnet">Carnets de voyage</a></li>
+                <li><a href="#apropos">A propos</a></li>
+                <li><a href="#mecontacter">Me contacter</a></li>
+            </ul>
+        </nav>
+        <h1>Carnets de voyage</h1>
+    </header>
+
+    <main id="container">
+        <!------->
+        <section id="carnet">
+            <article class="vienne">
+                <h2>Mes derniers voyages</h2>
+                <h3>Vienne, Autriche</h3>
+                <img src="ressources/vienne.jpg" alt: "Vienne Autriche" class="gauche"></img>
+        
+                <p>Vienne est un mélange d’architecture fastueuse, de musique et de charme pittoresque.</p>
+        
+                <p>Semblable à nulle autre, <b>Vienne</b> préserve intact son aspect historique d’origine marqué par des édifices fastueux datant de l’époque baroque et des débuts du XXème siècle.</p>
+        
+                <p>La moitié de la ville est située sur le Danube et offre des parcs, la forêt viennoise et même des zones viticoles pour les loisirs.</p>
+                <button type="button" class="btn btn-primary">En savoir plus</button>
+            </article>
+        
+            <article class="marrakech">
+                <h3>Marrakech, Maroc</h3>
+                <img src="ressources/marrakech.jpg" alt: "Marrakech, Maroc" class="droite">Marrakech, Maroc</img>
+                <!--Atribut alt : Marrakech, Maroc-->
+        
+                <p>Marrakech, est une ville située dans le centre du Maroc au pied des montagnes de l'Atlas. <b>Marrakech</b> est surnommée <span class="rouge">« la ville rouge »</span> ou la <span class="jaune">« ville ocre »</span> en référence à la couleur rouge
+                    d'une grande partie de ses immeubles et ses maisons.</p>
+                <p>Marrakech est une ville unique en son genre qui se distingue totalement du reste. Visiter Marrakech est une expérience qui stimulera tous vos sens : ses couleurs, ses saveurs et ses odeurs vous marqueront dès votre arrivée et vous accompagneront
+                    des semaines après votre retour.</p>
+                <button type="button" class="btn btn-primary">En savoir plus</button>
+            </article>
+        </section>
+    </main>
+
+        ---
+        <section id="apropos">
+            <article class="articleApropos">
+                <h2>À propos</h2>
+                <p>Je m'appelle Claire et j'aime les <b>voyages</b> et l'<b>aventure</b>.</p>
+                <p>C'est suite à un long <b>tour du monde</b> que j'ai changé de vie et que j'ai décidé de créer ce blog pour vous aider à voyager.</p>
+                <p>Ma passion pour le voyage est désormais devenu mon métier.</p>
+                <p>Vous pourrez trouver ici de l'inspiration et de nombreux conseils pour <b>réduire votre budget voyages</b> et pouvoir partir plus souvent.</p>
+            </article>
+        </section>
+        ---
+        <adress id="mecontacter">
+            <h2>Me contacter</h2>
+            <p>31 Rue d'Auteuil, Paris 16ème</p>
+            <a href="mailto:claire@helloworld.com">claire@helloworld.com</a><br>
+            <a href="tel:+33601030507">06 01 03 05 07</a>
+
+            <p>Suivez-moi sur :</p>
+            <!--Liens à placer sur les icônes-->
+            <!--fa-map-marker-alt, fa-envelope, fa-mobile-alt, fa-facebook-square, fa-twitter-square, fa-pinterest-square, fa-instagram-square =>-->
+            <a href=""><i class="fab fa-facebook-square" href="https://www.facebook.com"></i></a>
+            <i class='fab fa-twitter-square' href="https://twitter.com"></i>
+            <i class="fab fa-instagram-square" href="https://www.instagram.com"></i>
+            <i class='fab fa-pinterest-square' href="https://www.pinterest.com"></i>
+        </address>
+    <!--h1{textblabla}+p{bmabin}+ul.cards.parent.test-18>>li.textbla$*5-->
+    <footer>
+        <img src="../logo-3wa.png" alt="Propriété de la 3W Academy"></img>
+        <p>Ce matériel pédagogique est la propriété de la <a href="https://3wa.fr/propriete-materiel-pedagogique">3W Academy</a>. Cet exercice a été réalisé par <a href="https://www.consultantweb.eu/"> Christiane Dumont.</a> </p>
+        <p>Images fournies par <a href="https://pixabay.com/">Pixabay.</a></p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+
+</html>
